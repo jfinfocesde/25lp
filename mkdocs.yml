@@ -1,10 +1,13 @@
-site_name: My site
+site_name: JCode - Lógica de Programación
 site_url: https://mydomain.org/mysite
 theme:
   name: material
+  language: es
   features:
     - content.code.copy
     - content.code.select
+  icon:
+    logo: octicons/code-16
   palette: 
 
     # Palette toggle for light mode
@@ -27,4 +30,13 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fosstodon.org/@squidfunk
+
+nav:
+  - Introducción: index.md
+  
 

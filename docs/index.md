@@ -1,81 +1,16 @@
-# Welcome to MkDocs
+# Introducción
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<div class="flex justify-center">
+  <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Centered Responsive Image" class="max-w-full h-auto" />
+</div>
 
-## Commands
+Bienvenidos al curso de Lógica de Programación, un componente esencial del programa Técnico Laboral como Auxiliar en Sistemas ofrecido por CESDE en la Escuela de Nuevas Tecnologías.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Este curso está diseñado para sumergirte en los fundamentos de la programación, centrándose en dos unidades principales:
 
-## Project layout
+1.  Elementos básicos de la lógica
+2.  Estructuras lógicas
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+A lo largo de 18 semanas, explorarás desde los conceptos básicos de la lógica de programación hasta estructuras más avanzadas como ciclos, funciones y arreglos.
 
-# Semana 3
-
-## Operadores aritméticos
-
-Los operadores aritméticos en Java se utilizan para realizar operaciones matemáticas básicas. Los operadores aritméticos incluyen:
-
-### Suma (+): se utiliza para sumar dos valores.
-
-```java
-int a = 5;
-int b = 10;
-int c = a + b; // c es igual a 15
-```
-
-### Resta (-): se utiliza para restar un valor de otro.
-
-```java
-int a = 10;
-int b = 5;
-int c = a - b; // c es igual a 5
-```
-
-### Multiplicación (\*): se utiliza para multiplicar dos valores.
-
-```java
-int a = 5;
-int b = 10;
-int c = a * b; // c es igual a 50
-```
-
-### División (/): se utiliza para dividir un valor entre otro.
-
-```java
-int a = 10;
-int b = 5;
-int c = a / b; // c es igual a 2
-```
-
-### Módulo (%): se utiliza para obtener el resto de una división entre dos valores.
-
-```java
-int a = 10;
-int b = 3;
-int c = a % b; // c es igual a 1
-```
-
-
-| Method      | Description                          |
-| :---------- | :----------------------------------- |
-| `GET`       | :material-check:     Fetch resource  |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
-
-
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PoMejXo" data-pen-title="Dashboard con Tailwind CSS" data-user="jhon-valencia-the-encoder" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/jhon-valencia-the-encoder/pen/PoMejXo">
-  Dashboard con Tailwind CSS</a> by jhon valencia (<a href="https://codepen.io/jhon-valencia-the-encoder">@jhon-valencia-the-encoder</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://public.codepenassets.com/embed/index.js"></script>
-
-
-<iframe width="1519" height="561" src="https://www.youtube.com/embed/xlABhbnNrfI" title="Material for MkDocs: Full Tutorial To Build And Deploy Your Docs Portal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Un aspecto destacado del curso es el Proyecto Integrador, que te desafiará a aplicar tus conocimientos en un contexto empresarial real. Tendrás tres seguimientos periódicos (en las semanas 6, 12 y 18) para asegurar tu progreso y culminarás con una sustentación final.
