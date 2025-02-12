@@ -42,8 +42,7 @@ extra:
 
 copyright: Copyright &copy; 2025 by JFVG
 
-plugins:
-  - glightbox
+plugins:  
   - mkdocs-pdf
 
 nav:  
