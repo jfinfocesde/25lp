@@ -1,5 +1,8 @@
 site_name: Lógica de Programación
-site_url: https://mydomain.org/mysite
+# site_url: https://mydomain.org/mysite
+
+site_url: https://jfinfocesde.github.io/25lp/
+repo_url: https://github.com/jfinfocesde/25lp
 
 theme:
   name: material
