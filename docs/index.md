@@ -62,3 +62,20 @@ int b = 3;
 int c = a % b; // c es igual a 1
 ```
 
+
+| Method      | Description                          |
+| :---------- | :----------------------------------- |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PoMejXo" data-pen-title="Dashboard con Tailwind CSS" data-user="jhon-valencia-the-encoder" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/jhon-valencia-the-encoder/pen/PoMejXo">
+  Dashboard con Tailwind CSS</a> by jhon valencia (<a href="https://codepen.io/jhon-valencia-the-encoder">@jhon-valencia-the-encoder</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+
+<iframe width="1519" height="561" src="https://www.youtube.com/embed/xlABhbnNrfI" title="Material for MkDocs: Full Tutorial To Build And Deploy Your Docs Portal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
