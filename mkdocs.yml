@@ -1,8 +1,5 @@
 site_name: Lógica de Programación
-# site_url: https://mydomain.org/mysite
-
 site_url: https://jfinfocesde.github.io/25lp/
-repo_url: https://github.com/jfinfocesde/25lp
 
 theme:
   name: material
@@ -41,9 +38,6 @@ extra:
       link: https://fosstodon.org/@squidfunk
 
 copyright: Copyright &copy; 2025 by JFVG
-
-plugins:  
-  - mkdocs-pdf
 
 nav:  
   - Semana 1: p1.md
