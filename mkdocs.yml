@@ -3,13 +3,14 @@ site_url: https://mydomain.org/mysite
 theme:
   name: material
   language: es
+  
   features:
     - content.code.copy
     - content.code.select
   icon:
     logo: octicons/code-16
   palette: 
-
+    
     # Palette toggle for light mode
     - scheme: default
       toggle:
@@ -32,6 +33,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/mastodon 
       link: https://fosstodon.org/@squidfunk
