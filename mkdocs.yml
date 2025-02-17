@@ -5,6 +5,7 @@ theme:
   name: material
   language: es  
   features:
+    - toc.integrate
     - content.code.copy 
   icon:
     logo: octicons/code-16
