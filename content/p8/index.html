@@ -1,0 +1,3214 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="jhonfvg">
+      
+      
+        <link rel="canonical" href="https://jfinfocesde.github.io/25lp/content/p8/">
+      
+      
+        <link rel="prev" href="../p7/">
+      
+      
+        <link rel="next" href="../p9/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>Semana 8 - Estructuras de Datos en Java - Lógica de Programación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#semana-8-estructuras-de-datos-en-java" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Lógica de Programación" class="md-header__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lógica de Programación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Semana 8 - Estructuras de Datos en Java
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Contenido
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pi/p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Proyecto Integrador
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  Acerca de
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lógica de Programación" class="md-nav__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    Lógica de Programación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Contenido
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Contenido
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1 - Pacto pedagógico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2 - ¿Qué es la programación?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3 - Operadores y instrucciones de control condicional
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p3_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ejercicios de Práctica - Operadores y Estructuras Condicionales en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 4 - Conversión de tipos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5 - Ejercicios Prácticos Solucionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6 - Evaluación Primer Momento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 7 - Estructuras de control en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Semana 8 - Estructuras de Datos en Java
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Semana 8 - Estructuras de Datos en Java
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-array-en-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es un array en Java?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es un array en Java?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-declaracion-de-un-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Declaración de un array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Declaración de un array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sintaxis:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-inicializacion-de-un-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Inicialización de un array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Inicialización de un array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-especificando-el-tamano" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Especificando el tamaño:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-asignando-valores-directamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Asignando valores directamente:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nota:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-acceso-a-elementos-del-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Acceso a elementos del array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Acceso a elementos del array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificar-un-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modificar un elemento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuidado:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-propiedad-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Propiedad length
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Propiedad length">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-recorrer-un-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Recorrer un array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Recorrer un array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-con-un-bucle-for-tradicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Con un bucle for tradicional:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-con-un-bucle-for-each-mejor-para-solo-lectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Con un bucle for-each (mejor para solo lectura):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-arrays-multidimensionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Arrays multidimensionales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Arrays multidimensionales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaracion-e-inicializacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración e inicialización:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceso-a-elementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceso a elementos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recorrer-un-array-bidimensional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recorrer un array bidimensional:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-metodos-utiles-de-la-clase-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Métodos útiles de la clase Arrays
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Métodos útiles de la clase Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-ejemplo-practico-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Ejemplo práctico completo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-errores-comunes-y-como-evitarlos" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Errores comunes y cómo evitarlos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-ventajas-y-limitaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Ventajas y limitaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-arraylist-en-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es un ArrayList en Java?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es un ArrayList en Java?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-caracteristicas-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Características principales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-importacion-y-declaracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Importación y declaración
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Importación y declaración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-metodos-principales-de-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Métodos principales de ArrayList
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-inicializacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Inicialización
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Inicialización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-vacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Vacío:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-con-valores-iniciales-usando-arraysaslist" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Con valores iniciales (usando Arrays.asList):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-con-una-capacidad-inicial-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Con una capacidad inicial (opcional):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-recorrer-un-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Recorrer un ArrayList
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Recorrer un ArrayList">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-con-un-bucle-for-tradicional_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Con un bucle for tradicional:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-con-un-bucle-for-each" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Con un bucle for-each:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-usando-iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Usando Iterator:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-con-el-metodo-foreach-java-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      d) Con el método forEach (Java 8+):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ejemplo-practico-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Ejemplo práctico completo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-arraylist-con-objetos-personalizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ArrayList con objetos personalizados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. ArrayList con objetos personalizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-conversion-entre-arraylist-y-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Conversión entre ArrayList y Array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Conversión entre ArrayList y Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-arraylist-a-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) ArrayList a Array:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-array-a-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Array a ArrayList:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-errores-comunes-y-como-evitarlos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Errores comunes y cómo evitarlos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-ventajas-y-limitaciones_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Ventajas y limitaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-collections-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Java Collections Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Java Collections Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-principales-tipos-de-colecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Principales tipos de colecciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Principales tipos de colecciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-listas-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Listas (List)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-conjuntos-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Conjuntos (Set)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-mapas-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Mapas (Map)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-colas-y-pilas-queue-y-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      d) Colas y Pilas (Queue y Stack)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-comparacion-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Comparación rápida
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ejemplo-practico-combinado" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Ejemplo práctico combinado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cuando-usar-cada-una" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Cuándo usar cada una
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 9 - Ejericicios de lógica de programación en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 12
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 13
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 14
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 15
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 16
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p17/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 17
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 18
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto Integrador
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto Integrador
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción Proyecto Integrador
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/p2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avance 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acerca de
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-array-en-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es un array en Java?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es un array en Java?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-declaracion-de-un-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Declaración de un array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Declaración de un array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sintaxis:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-inicializacion-de-un-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Inicialización de un array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Inicialización de un array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-especificando-el-tamano" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Especificando el tamaño:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-asignando-valores-directamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Asignando valores directamente:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nota:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-acceso-a-elementos-del-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Acceso a elementos del array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Acceso a elementos del array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificar-un-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modificar un elemento:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuidado:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-propiedad-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Propiedad length
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Propiedad length">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-recorrer-un-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Recorrer un array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Recorrer un array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-con-un-bucle-for-tradicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Con un bucle for tradicional:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-con-un-bucle-for-each-mejor-para-solo-lectura" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Con un bucle for-each (mejor para solo lectura):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-arrays-multidimensionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Arrays multidimensionales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Arrays multidimensionales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaracion-e-inicializacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración e inicialización:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceso-a-elementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceso a elementos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recorrer-un-array-bidimensional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recorrer un array bidimensional:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-metodos-utiles-de-la-clase-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Métodos útiles de la clase Arrays
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Métodos útiles de la clase Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-ejemplo-practico-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Ejemplo práctico completo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-errores-comunes-y-como-evitarlos" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Errores comunes y cómo evitarlos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-ventajas-y-limitaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Ventajas y limitaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-arraylist-en-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es un ArrayList en Java?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es un ArrayList en Java?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-caracteristicas-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Características principales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-importacion-y-declaracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Importación y declaración
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Importación y declaración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declaracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-metodos-principales-de-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Métodos principales de ArrayList
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-inicializacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Inicialización
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Inicialización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-vacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Vacío:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-con-valores-iniciales-usando-arraysaslist" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Con valores iniciales (usando Arrays.asList):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-con-una-capacidad-inicial-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Con una capacidad inicial (opcional):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-recorrer-un-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Recorrer un ArrayList
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Recorrer un ArrayList">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-con-un-bucle-for-tradicional_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Con un bucle for tradicional:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-con-un-bucle-for-each" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Con un bucle for-each:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-usando-iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Usando Iterator:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-con-el-metodo-foreach-java-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      d) Con el método forEach (Java 8+):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ejemplo-practico-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Ejemplo práctico completo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-arraylist-con-objetos-personalizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ArrayList con objetos personalizados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. ArrayList con objetos personalizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-conversion-entre-arraylist-y-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Conversión entre ArrayList y Array
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Conversión entre ArrayList y Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-arraylist-a-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) ArrayList a Array:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-array-a-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Array a ArrayList:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-errores-comunes-y-como-evitarlos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Errores comunes y cómo evitarlos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-ventajas-y-limitaciones_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Ventajas y limitaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-collections-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Java Collections Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Java Collections Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-principales-tipos-de-colecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Principales tipos de colecciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Principales tipos de colecciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-listas-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      a) Listas (List)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-conjuntos-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      b) Conjuntos (Set)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-mapas-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      c) Mapas (Map)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-colas-y-pilas-queue-y-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      d) Colas y Pilas (Queue y Stack)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-comparacion-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Comparación rápida
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ejemplo-practico-combinado" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Ejemplo práctico combinado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cuando-usar-cada-una" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Cuándo usar cada una
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="semana-8-estructuras-de-datos-en-java">Semana 8 - Estructuras de Datos en Java</h1>
+<p>Java proporciona herramientas poderosas para gestionar datos, desde arrays hasta el Collections Framework. Esta guía explora arrays, ArrayList y las principales colecciones con ejemplos prácticos, ayudándote a dominar su uso en Java.</p>
+<h2 id="que-es-un-array-en-java">¿Qué es un array en Java?</h2>
+<p>Un array (arreglo) en Java es una estructura de datos que permite almacenar múltiples elementos del mismo tipo en una sola variable. Los elementos se almacenan en posiciones consecutivas de memoria y se acceden mediante un índice (que comienza en 0).</p>
+<hr />
+<h3 id="1-declaracion-de-un-array"><strong>1. Declaración de un array</strong></h3>
+<p>Para usar un array, primero debes declararlo. Hay dos formas principales de hacerlo:</p>
+<h4 id="sintaxis"><strong>Sintaxis:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">tipoDato</span><span class="o">[]</span><span class="w"> </span><span class="n">nombreArray</span><span class="p">;</span><span class="w"> </span><span class="c1">// Forma preferida</span>
+<span class="c1">// o</span>
+<span class="n">tipoDato</span><span class="w"> </span><span class="n">nombreArray</span><span class="o">[]</span><span class="p">;</span><span class="w"> </span><span class="c1">// Alternativa válida, pero menos común</span>
+</code></pre></div>
+<h4 id="ejemplo"><strong>Ejemplo:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="p">;</span><span class="w">      </span><span class="c1">// Declara un array de enteros</span>
+<span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">nombres</span><span class="p">;</span><span class="w">   </span><span class="c1">// Declara un array de Strings</span>
+</code></pre></div>
+<hr />
+<h3 id="2-inicializacion-de-un-array"><strong>2. Inicialización de un array</strong></h3>
+<p>Un array debe inicializarse antes de usarse. Esto implica asignarle un tamaño o valores iniciales.</p>
+<h4 id="a-especificando-el-tamano"><strong>a) Especificando el tamaño:</strong></h4>
+<p>Usas la palabra clave <code>new</code> junto con el tipo de dato y el tamaño entre corchetes.
+<div class="highlight"><pre><span></span><code><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="c1">// Crea un array de 5 elementos (inicializados en 0 por defecto)</span>
+</code></pre></div></p>
+<h4 id="b-asignando-valores-directamente"><strong>b) Asignando valores directamente:</strong></h4>
+<p>Puedes inicializar el array con valores específicos usando llaves <code>{}</code>.
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">};</span><span class="w"> </span><span class="c1">// Array de 5 elementos con valores definidos</span>
+<span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luis&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;María&quot;</span><span class="p">};</span>
+</code></pre></div></p>
+<h4 id="nota"><strong>Nota:</strong></h4>
+<ul>
+<li>Si inicializas directamente con valores, no necesitas especificar el tamaño; Java lo calcula automáticamente.</li>
+<li>Si solo declaras el array (<code>int[] numeros;</code>) sin inicializarlo, no puedes usarlo hasta asignarle un tamaño o valores.</li>
+</ul>
+<hr />
+<h3 id="3-acceso-a-elementos-del-array"><strong>3. Acceso a elementos del array</strong></h3>
+<p>Cada elemento del array se accede mediante su índice (posición), que va desde <code>0</code> hasta <code>tamaño - 1</code>.</p>
+<h4 id="ejemplo_1"><strong>Ejemplo:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">};</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numeros</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span><span class="w"> </span><span class="c1">// Imprime 10 (primer elemento)</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numeros</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span><span class="w"> </span><span class="c1">// Imprime 30 (tercer elemento)</span>
+</code></pre></div>
+<h4 id="modificar-un-elemento"><strong>Modificar un elemento:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">numeros</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"> </span><span class="c1">// Cambia el segundo elemento de 20 a 50</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numeros</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span><span class="w"> </span><span class="c1">// Imprime 50</span>
+</code></pre></div>
+<h4 id="cuidado"><strong>Cuidado:</strong></h4>
+<p>Si intentas acceder a un índice fuera del rango (por ejemplo, <code>numeros[5]</code> en un array de tamaño 4), obtendrás una excepción: <code>ArrayIndexOutOfBoundsException</code>.</p>
+<hr />
+<h3 id="4-propiedad-length"><strong>4. Propiedad <code>length</code></strong></h3>
+<p>El atributo <code>length</code> te permite obtener el tamaño del array.</p>
+<h4 id="ejemplo_2"><strong>Ejemplo:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="n">країна</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">};</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Tamaño del array: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numeros</span><span class="p">.</span><span class="na">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// Imprime 5</span>
+</code></pre></div>
+<hr />
+<h3 id="5-recorrer-un-array"><strong>5. Recorrer un array</strong></h3>
+<p>Puedes usar bucles para recorrer los elementos de un array.</p>
+<h4 id="a-con-un-bucle-for-tradicional"><strong>a) Con un bucle <code>for</code> tradicional:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">};</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numeros</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Elemento en índice &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numeros</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="b-con-un-bucle-for-each-mejor-para-solo-lectura"><strong>b) Con un bucle <code>for-each</code> (mejor para solo lectura):</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">};</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">numero</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Elemento: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">numero</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="6-arrays-multidimensionales"><strong>6. Arrays multidimensionales</strong></h3>
+<p>Un array multidimensional es un "array de arrays". El más común es el bidimensional (como una matriz).</p>
+<h4 id="declaracion-e-inicializacion"><strong>Declaración e inicialización:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">matriz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="mi">3</span><span class="o">][</span><span class="mi">4</span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="c1">// Matriz de 3 filas y 4 columnas</span>
+<span class="c1">// O con valores iniciales:</span>
+<span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">matriz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+<h4 id="acceso-a-elementos"><strong>Acceso a elementos:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">matriz</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span><span class="w"> </span><span class="c1">// Imprime 2 (fila 0, columna 1)</span>
+<span class="n">matriz</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// Cambia el valor en fila 1, columna 2 a 10</span>
+</code></pre></div>
+<h4 id="recorrer-un-array-bidimensional"><strong>Recorrer un array bidimensional:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">matriz</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Filas</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">matriz</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Columnas</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">matriz</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w"> </span><span class="c1">// Nueva línea por cada fila</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="7-metodos-utiles-de-la-clase-arrays"><strong>7. Métodos útiles de la clase <code>Arrays</code></strong></h3>
+<p>Java proporciona la clase <code>java.util.Arrays</code> con métodos útiles para manipular arrays.</p>
+<h4 id="ejemplos"><strong>Ejemplos:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Arrays</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Ejemplo</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">};</span>
+
+<span class="w">        </span><span class="c1">// a) Ordenar el array</span>
+<span class="w">        </span><span class="n">Arrays</span><span class="p">.</span><span class="na">sort</span><span class="p">(</span><span class="n">numeros</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">numeros</span><span class="p">));</span><span class="w"> </span><span class="c1">// Imprime [1, 1, 3, 4, 5]</span>
+
+<span class="w">        </span><span class="c1">// b) Convertir a String</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">numeros</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Imprime [1, 1, 3, 4, 5]</span>
+
+<span class="w">        </span><span class="c1">// c) Rellenar el array con un valor</span>
+<span class="w">        </span><span class="n">Arrays</span><span class="p">.</span><span class="na">fill</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">numeros</span><span class="p">));</span><span class="w"> </span><span class="c1">// Imprime [0, 0, 0, 0, 0]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="8-ejemplo-practico-completo"><strong>8. Ejemplo práctico completo</strong></h3>
+<p>Un programa que pide al usuario ingresar números en un array y luego calcula su promedio:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Promedio</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Pedir tamaño del array</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;¿Cuántos números desea ingresar? &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">tamaño</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="w">        </span><span class="c1">// Crear array</span>
+<span class="w">        </span><span class="kt">double</span><span class="o">[]</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">double</span><span class="o">[</span><span class="n">tamaño</span><span class="o">]</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Llenar el array</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tamaño</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese el número &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;: &quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">numeros</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Calcular promedio</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">suma</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">num</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">promedio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">tamaño</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultado</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;El promedio es: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">promedio</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="9-errores-comunes-y-como-evitarlos"><strong>9. Errores comunes y cómo evitarlos</strong></h3>
+<ol>
+<li><strong>Índices fuera de rango:</strong> Siempre verifica que el índice esté entre <code>0</code> y <code>length - 1</code>.</li>
+<li><strong>No inicializar el array:</strong> Asegúrate de usar <code>new</code> o asignar valores antes de usarlo.</li>
+<li><strong>Confundir <code>length</code> con <code>length()</code>:</strong> <code>length</code> es para arrays, <code>length()</code> es para Strings.</li>
+</ol>
+<hr />
+<h3 id="10-ventajas-y-limitaciones"><strong>10. Ventajas y limitaciones</strong></h3>
+<ul>
+<li><strong>Ventajas:</strong> Rápidos, eficientes y fáciles de usar para colecciones fijas.</li>
+<li><strong>Limitaciones:</strong> Tamaño fijo (no se puede redimensionar). Para colecciones dinámicas, considera usar <code>ArrayList</code>.</li>
+</ul>
+<hr />
+<h2 id="que-es-un-arraylist-en-java"><strong>¿Qué es un ArrayList en Java?</strong></h2>
+<p><code>ArrayList</code> es una clase de la biblioteca estándar de Java (<code>java.util.ArrayList</code>) que implementa una lista dinámica. A diferencia de los arrays tradicionales, un <code>ArrayList</code> puede cambiar de tamaño dinámicamente, permitiendo agregar o eliminar elementos en tiempo de ejecución. Está basado en un array interno, pero Java se encarga de gestionarlo automáticamente.</p>
+<hr />
+<h3 id="1-caracteristicas-principales"><strong>1. Características principales</strong></h3>
+<ul>
+<li><strong>Tamaño dinámico:</strong> Crece o se reduce según sea necesario.</li>
+<li><strong>Tipo genérico:</strong> Usa <code>&lt;Tipo&gt;</code> para especificar el tipo de datos que almacenará (por ejemplo, <code>&lt;Integer&gt;</code>, <code>&lt;String&gt;</code>).</li>
+<li><strong>No es sincronizado:</strong> No es seguro para hilos múltiples por defecto (usa <code>Collections.synchronizedList</code> si lo necesitas).</li>
+<li><strong>Índices:</strong> Al igual que un array, los elementos se acceden por índices (empezando en 0).</li>
+</ul>
+<hr />
+<h3 id="2-importacion-y-declaracion"><strong>2. Importación y declaración</strong></h3>
+<p>Para usar <code>ArrayList</code>, debes importar la clase:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="declaracion"><strong>Declaración:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Tipo</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nombreLista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</code></pre></div>
+<ul>
+<li><code>Tipo</code> es el tipo de datos (por ejemplo, <code>Integer</code>, <code>String</code>, <code>Double</code>).</li>
+<li>Los <code>&lt;&gt;</code> vacíos en <code>new ArrayList&lt;&gt;()</code> son válidos desde Java 7 (inferencia de tipos).</li>
+</ul>
+<h4 id="ejemplo_3"><strong>Ejemplo:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</code></pre></div>
+<hr />
+<h3 id="3-metodos-principales-de-arraylist"><strong>3. Métodos principales de ArrayList</strong></h3>
+<p><code>ArrayList</code> tiene muchos métodos útiles. Aquí están los más comunes:</p>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>add(elemento)</code></td>
+<td>Agrega un elemento al final de la lista</td>
+<td><code>nombres.add("Ana");</code></td>
+</tr>
+<tr>
+<td><code>add(indice, elemento)</code></td>
+<td>Inserta un elemento en una posición específica</td>
+<td><code>nombres.add(1, "Luis");</code></td>
+</tr>
+<tr>
+<td><code>get(indice)</code></td>
+<td>Obtiene el elemento en el índice especificado</td>
+<td><code>nombres.get(0); // "Ana"</code></td>
+</tr>
+<tr>
+<td><code>set(indice, elemento)</code></td>
+<td>Reemplaza el elemento en el índice dado</td>
+<td><code>nombres.set(0, "María");</code></td>
+</tr>
+<tr>
+<td><code>remove(indice)</code></td>
+<td>Elimina el elemento en el índice especificado</td>
+<td><code>nombres.remove(0);</code></td>
+</tr>
+<tr>
+<td><code>remove(elemento)</code></td>
+<td>Elimina la primera ocurrencia del elemento</td>
+<td><code>nombres.remove("Luis");</code></td>
+</tr>
+<tr>
+<td><code>size()</code></td>
+<td>Devuelve el número de elementos en la lista</td>
+<td><code>nombres.size(); // 2</code></td>
+</tr>
+<tr>
+<td><code>isEmpty()</code></td>
+<td>Verifica si la lista está vacía</td>
+<td><code>nombres.isEmpty(); // false</code></td>
+</tr>
+<tr>
+<td><code>clear()</code></td>
+<td>Elimina todos los elementos de la lista</td>
+<td><code>nombres.clear();</code></td>
+</tr>
+<tr>
+<td><code>contains(elemento)</code></td>
+<td>Verifica si la lista contiene un elemento</td>
+<td><code>nombres.contains("Ana"); // true</code></td>
+</tr>
+<tr>
+<td><code>indexOf(elemento)</code></td>
+<td>Devuelve el índice de la primera ocurrencia</td>
+<td><code>nombres.indexOf("Ana"); // 0</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="4-inicializacion"><strong>4. Inicialización</strong></h3>
+<p>Puedes crear un <code>ArrayList</code> vacío o inicializarlo con valores.</p>
+<h4 id="a-vacio"><strong>a) Vacío:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</code></pre></div>
+<h4 id="b-con-valores-iniciales-usando-arraysaslist"><strong>b) Con valores iniciales (usando <code>Arrays.asList</code>):</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Arrays</span><span class="p">;</span>
+
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luis&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;María&quot;</span><span class="p">));</span>
+</code></pre></div>
+<h4 id="c-con-una-capacidad-inicial-opcional"><strong>c) Con una capacidad inicial (opcional):</strong></h4>
+<p><div class="highlight"><pre><span></span><code><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numeros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"> </span><span class="c1">// Capacidad inicial de 10 elementos</span>
+</code></pre></div>
+- Esto no limita el tamaño, solo optimiza el rendimiento al reservar espacio.</p>
+<hr />
+<h3 id="5-recorrer-un-arraylist"><strong>5. Recorrer un ArrayList</strong></h3>
+<p>Hay varias formas de recorrer un <code>ArrayList</code>:</p>
+<h4 id="a-con-un-bucle-for-tradicional_1"><strong>a) Con un bucle <code>for</code> tradicional:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">nombres</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">);</span>
+<span class="n">nombres</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Luis&quot;</span><span class="p">);</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nombres</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Elemento en índice &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombres</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="b-con-un-bucle-for-each"><strong>b) Con un bucle <code>for-each</code>:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">nombres</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Elemento: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombre</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="c-usando-iterator"><strong>c) Usando <code>Iterator</code>:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Iterator</span><span class="p">;</span>
+
+<span class="n">Iterator</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">iterator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nombres</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">iterator</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Elemento: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">iterator</span><span class="p">.</span><span class="na">next</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="d-con-el-metodo-foreach-java-8"><strong>d) Con el método <code>forEach</code> (Java 8+):</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">nombres</span><span class="p">.</span><span class="na">forEach</span><span class="p">(</span><span class="n">nombre</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Elemento: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombre</span><span class="p">));</span>
+</code></pre></div>
+<hr />
+<h3 id="6-ejemplo-practico-completo"><strong>6. Ejemplo práctico completo</strong></h3>
+<p>Un programa que gestiona una lista de tareas:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ListaTareas</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tareas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">opcion</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\n1. Agregar tarea&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;2. Ver tareas&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;3. Eliminar tarea&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;4. Salir&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Seleccione una opción: &quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">opcion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+
+<span class="w">            </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">opcion</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">:</span>
+<span class="w">                    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese la tarea: &quot;</span><span class="p">);</span>
+<span class="w">                    </span><span class="n">String</span><span class="w"> </span><span class="n">tarea</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="w">                    </span><span class="n">tareas</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">tarea</span><span class="p">);</span>
+<span class="w">                    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Tarea agregada.&quot;</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">:</span>
+<span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tareas</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No hay tareas.&quot;</span><span class="p">);</span>
+<span class="w">                    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Lista de tareas:&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tareas</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;. &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tareas</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;3&quot;</span><span class="p">:</span>
+<span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tareas</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No hay tareas para eliminar.&quot;</span><span class="p">);</span>
+<span class="w">                    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Ingrese el número de la tarea a eliminar: &quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="kt">int</span><span class="w"> </span><span class="n">indice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">())</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">indice</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">indice</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tareas</span><span class="p">.</span><span class="na">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="n">tareas</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">indice</span><span class="p">);</span>
+<span class="w">                            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Tarea eliminada.&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Índice inválido.&quot;</span><span class="p">);</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;4&quot;</span><span class="p">:</span>
+<span class="w">                    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Saliendo...&quot;</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="k">default</span><span class="p">:</span>
+<span class="w">                    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Opción inválida.&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">opcion</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;4&quot;</span><span class="p">));</span>
+
+<span class="w">        </span><span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="7-arraylist-con-objetos-personalizados"><strong>7. ArrayList con objetos personalizados</strong></h3>
+<p>Puedes almacenar objetos de tus propias clases en un <code>ArrayList</code>.</p>
+<h4 id="ejemplo_4"><strong>Ejemplo:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">Persona</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">nombre</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">edad</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Persona</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">edad</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nombre</span><span class="p">;</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">edad</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">toString</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; (&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; años)&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">EjemploPersonas</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Persona</span><span class="o">&gt;</span><span class="w"> </span><span class="n">personas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="n">personas</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Persona</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">));</span>
+<span class="w">        </span><span class="n">personas</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Persona</span><span class="p">(</span><span class="s">&quot;Luis&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">));</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Persona</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">personas</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="8-conversion-entre-arraylist-y-array"><strong>8. Conversión entre ArrayList y Array</strong></h3>
+<h4 id="a-arraylist-a-array"><strong>a) ArrayList a Array:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">nombres</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">);</span>
+<span class="n">nombres</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Luis&quot;</span><span class="p">);</span>
+
+<span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">arrayNombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nombres</span><span class="p">.</span><span class="na">toArray</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+</code></pre></div>
+<h4 id="b-array-a-arraylist"><strong>b) Array a ArrayList:</strong></h4>
+<div class="highlight"><pre><span></span><code><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luis&quot;</span><span class="p">};</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="n">array</span><span class="p">));</span>
+</code></pre></div>
+<hr />
+<h3 id="9-errores-comunes-y-como-evitarlos_1"><strong>9. Errores comunes y cómo evitarlos</strong></h3>
+<ol>
+<li><strong>Índices fuera de rango:</strong> Usa <code>size()</code> para verificar el tamaño antes de acceder con <code>get()</code> o <code>remove()</code>.</li>
+<li><strong>Uso de tipos genéricos:</strong> Evita usar <code>ArrayList</code> sin <code>&lt;Tipo&gt;</code> (raw type), ya que puede causar problemas de tipo en tiempo de ejecución.</li>
+<li><strong>Modificación durante iteración:</strong> Si necesitas eliminar elementos mientras recorres, usa un <code>Iterator</code> o recorre al revés con un bucle <code>for</code>.</li>
+</ol>
+<hr />
+<h3 id="10-ventajas-y-limitaciones_1"><strong>10. Ventajas y limitaciones</strong></h3>
+<ul>
+<li><strong>Ventajas:</strong> Tamaño dinámico, fácil de usar, muchos métodos útiles.</li>
+<li><strong>Limitaciones:</strong> Más lento que los arrays para accesos directos, no es sincronizado por defecto.</li>
+</ul>
+<hr />
+<h2 id="java-collections-framework">Java Collections Framework</h2>
+<p>El framework se basa en dos interfaces principales:
+- <strong><code>Collection</code>:</strong> Define métodos básicos para colecciones como listas, conjuntos y colas.
+- <strong><code>Map</code>:</strong> Define estructuras de datos basadas en pares clave-valor.</p>
+<p>Estas interfaces se implementan en clases concretas que veremos a continuación.</p>
+<hr />
+<h3 id="2-principales-tipos-de-colecciones"><strong>2. Principales tipos de colecciones</strong></h3>
+<p>Las colecciones en Java se dividen en tres categorías principales: <strong>Listas</strong>, <strong>Conjuntos (Sets)</strong> y <strong>Mapas (Maps)</strong>. Además, hay una subcategoría especial para <strong>Colas (Queues)</strong>.</p>
+<h4 id="a-listas-list"><strong>a) Listas (List)</strong></h4>
+<p>Las listas son colecciones ordenadas que permiten elementos duplicados. Los elementos se acceden por índice.</p>
+<ul>
+<li><strong>Características:</strong></li>
+<li>Mantienen el orden de inserción.</li>
+<li>Pueden contener duplicados.</li>
+<li>
+<p>Acceso por índice (como arrays).</p>
+</li>
+<li>
+<p><strong>Clases principales:</strong></p>
+</li>
+<li>
+<p><strong><code>ArrayList</code>:</strong></p>
+<ul>
+<li>Implementación basada en un array dinámico.</li>
+<li>Rápida para acceso y búsqueda por índice.</li>
+<li>Lenta para inserciones/eliminaciones en posiciones intermedias.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">lista</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">);</span>
+<span class="n">lista</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Luis&quot;</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>LinkedList</code>:</strong></p>
+<ul>
+<li>Implementación basada en una lista doblemente enlazada.</li>
+<li>Rápida para inserciones/eliminaciones en cualquier posición.</li>
+<li>Lenta para acceso aleatorio.</li>
+<li>También implementa la interfaz <code>Queue</code>.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.LinkedList</span><span class="p">;</span>
+<span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LinkedList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">lista</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;María&quot;</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>Vector</code>:</strong></p>
+<ul>
+<li>Similar a <code>ArrayList</code>, pero sincronizado (seguro para hilos).</li>
+<li>Menos usado hoy en día por su overhead (usa <code>Collections.synchronizedList</code> en su lugar).</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Vector</span><span class="p">;</span>
+<span class="n">Vector</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">vector</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">vector</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h4 id="b-conjuntos-set"><strong>b) Conjuntos (Set)</strong></h4>
+<p>Los conjuntos son colecciones que <strong>no permiten duplicados</strong>. No mantienen un orden específico, salvo excepciones.</p>
+<ul>
+<li><strong>Características:</strong></li>
+<li>Solo elementos únicos.</li>
+<li>
+<p>Útiles para eliminar duplicados o verificar pertenencia.</p>
+</li>
+<li>
+<p><strong>Clases principales:</strong></p>
+</li>
+<li>
+<p><strong><code>HashSet</code>:</strong></p>
+<ul>
+<li>Basado en una tabla hash.</li>
+<li>No garantiza orden.</li>
+<li>Muy rápido para operaciones como <code>add</code>, <code>remove</code>, y <code>contains</code>.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashSet</span><span class="p">;</span>
+<span class="n">HashSet</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">conjunto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashSet</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">conjunto</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">);</span>
+<span class="n">conjunto</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// No se agrega el duplicado</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>LinkedHashSet</code>:</strong></p>
+<ul>
+<li>Mantiene el orden de inserción.</li>
+<li>Más lento que <code>=</code>HashSet`, pero con orden garantizado.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.LinkedHashSet</span><span class="p">;</span>
+<span class="n">LinkedHashSet</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">conjunto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LinkedHashSet</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">conjunto</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Luis&quot;</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>TreeSet</code>:</strong></p>
+<ul>
+<li>Basado en un árbol binario balanceado (Red-Black Tree).</li>
+<li>Ordena los elementos automáticamente (orden natural o personalizado).</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.TreeSet</span><span class="p">;</span>
+<span class="n">TreeSet</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">conjunto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TreeSet</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">conjunto</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">conjunto</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="c1">// Resultado: [1, 3]</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h4 id="c-mapas-map"><strong>c) Mapas (Map)</strong></h4>
+<p>Los mapas almacenan pares <strong>clave-valor</strong>. No extienden <code>Collection</code>, pero forman parte del Collections Framework.</p>
+<ul>
+<li><strong>Características:</strong></li>
+<li>Cada clave es única y está asociada a un valor.</li>
+<li>
+<p>Ideal para búsquedas rápidas por clave.</p>
+</li>
+<li>
+<p><strong>Clases principales:</strong></p>
+</li>
+<li>
+<p><strong><code>HashMap</code>:</strong></p>
+<ul>
+<li>Basado en una tabla hash.</li>
+<li>No garantiza orden.</li>
+<li>Muy eficiente para operaciones de búsqueda, inserción y eliminación.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashMap</span><span class="p">;</span>
+<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mapa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">mapa</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">);</span>
+<span class="n">mapa</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Luis&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>LinkedHashMap</code>:</strong></p>
+<ul>
+<li>Mantiene el orden de inserción.</li>
+<li>Ligeramente más lento que <code>HashMap</code>.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.LinkedHashMap</span><span class="p">;</span>
+<span class="n">LinkedHashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mapa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LinkedHashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">mapa</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;clave1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;valor1&quot;</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>TreeMap</code>:</strong></p>
+<ul>
+<li>Ordena las claves automáticamente (orden natural o personalizado).</li>
+<li>Basado en un árbol binario.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.TreeMap</span><span class="p">;</span>
+<span class="n">TreeMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mapa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TreeMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">mapa</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Zoe&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="n">mapa</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">);</span>
+<span class="c1">// Resultado: {Ana=25, Zoe=10}</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>Hashtable</code>:</strong></p>
+<ul>
+<li>Similar a <code>HashMap</code>, pero sincronizado.</li>
+<li>Obsoleto en la mayoría de los casos modernos.</li>
+</ul>
+</li>
+</ul>
+<h4 id="d-colas-y-pilas-queue-y-stack"><strong>d) Colas y Pilas (Queue y Stack)</strong></h4>
+<p>Son estructuras especializadas para manejar elementos en un orden específico.</p>
+<ul>
+<li><strong>Características:</strong></li>
+<li>
+<p>Siguen reglas como FIFO (primero en entrar, primero en salir) o LIFO (último en entrar, primero en salir).</p>
+</li>
+<li>
+<p><strong>Clases principales:</strong></p>
+</li>
+<li>
+<p><strong><code>PriorityQueue</code>:</strong></p>
+<ul>
+<li>Cola con prioridad (ordena elementos según su orden natural o un comparador).</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.PriorityQueue</span><span class="p">;</span>
+<span class="n">PriorityQueue</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cola</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PriorityQueue</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">cola</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">cola</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="c1">// Resultado al extraer: 1, 3</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>LinkedList</code> (como Queue):</strong></p>
+<ul>
+<li>Puede usarse como cola FIFO.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.LinkedList</span><span class="p">;</span>
+<span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cola</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LinkedList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">cola</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Primero&quot;</span><span class="p">);</span>
+<span class="n">cola</span><span class="p">.</span><span class="na">poll</span><span class="p">();</span><span class="w"> </span><span class="c1">// Saca &quot;Primero&quot;</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>Stack</code>:</strong></p>
+<ul>
+<li>Pila LIFO.</li>
+<li>Aunque existe, se recomienda usar <code>Deque</code> (como <code>ArrayDeque</code>) en su lugar.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Stack</span><span class="p">;</span>
+<span class="n">Stack</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pila</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Stack</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">pila</span><span class="p">.</span><span class="na">push</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span>
+<span class="n">pila</span><span class="p">.</span><span class="na">pop</span><span class="p">();</span><span class="w"> </span><span class="c1">// Saca &quot;A&quot;</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong><code>ArrayDeque</code>:</strong></p>
+<ul>
+<li>Cola doblemente terminada (deque).</li>
+<li>Muy eficiente como pila o cola.</li>
+<li>Ejemplo:
+   <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayDeque</span><span class="p">;</span>
+<span class="n">ArrayDeque</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">deque</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayDeque</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">deque</span><span class="p">.</span><span class="na">addFirst</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span>
+<span class="n">deque</span><span class="p">.</span><span class="na">addLast</span><span class="p">(</span><span class="s">&quot;B&quot;</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="3-comparacion-rapida"><strong>3. Comparación rápida</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Ordenado</th>
+<th>Duplicados</th>
+<th>Clave-Valor</th>
+<th>Ejemplo de uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ArrayList</code></td>
+<td>Sí</td>
+<td>Sí</td>
+<td>No</td>
+<td>Lista de tareas</td>
+</tr>
+<tr>
+<td><code>HashSet</code></td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Eliminar duplicados</td>
+</tr>
+<tr>
+<td><code>TreeSet</code></td>
+<td>Sí</td>
+<td>No</td>
+<td>No</td>
+<td>Lista ordenada única</td>
+</tr>
+<tr>
+<td><code>HashMap</code></td>
+<td>No</td>
+<td>No (claves)</td>
+<td>Sí</td>
+<td>Diccionario clave-valor</td>
+</tr>
+<tr>
+<td><code>TreeMap</code></td>
+<td>Sí</td>
+<td>No (claves)</td>
+<td>Sí</td>
+<td>Mapa ordenado por claves</td>
+</tr>
+<tr>
+<td><code>PriorityQueue</code></td>
+<td>Sí</td>
+<td>Sí</td>
+<td>No</td>
+<td>Tareas con prioridad</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="4-ejemplo-practico-combinado"><strong>4. Ejemplo práctico combinado</strong></h3>
+<p>Un programa que usa varias colecciones:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.*</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">EjemploColecciones</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Lista</span>
+<span class="w">        </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="n">lista</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">lista</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Lista: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">lista</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Conjunto (elimina duplicados)</span>
+<span class="w">        </span><span class="n">HashSet</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">conjunto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashSet</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">lista</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Conjunto: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">conjunto</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Mapa</span>
+<span class="w">        </span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mapa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="n">mapa</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p">);</span>
+<span class="w">        </span><span class="n">mapa</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Luis&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Mapa: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">mapa</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Cola con prioridad</span>
+<span class="w">        </span><span class="n">PriorityQueue</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cola</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PriorityQueue</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="n">cola</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="w">        </span><span class="n">cola</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Cola: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cola</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span><span class="w"> </span><span class="c1">// Saca 1</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="5-cuando-usar-cada-una"><strong>5. Cuándo usar cada una</strong></h3>
+<ul>
+<li><strong>Listas:</strong> Cuando necesitas orden y acceso por índice.</li>
+<li><strong>Conjuntos:</strong> Cuando necesitas unicidad.</li>
+<li><strong>Mapas:</strong> Cuando necesitas asociar claves con valores.</li>
+<li><strong>Colas:</strong> Cuando necesitas procesar elementos en un orden específico (FIFO, LIFO, prioridad).</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025 &copy; by JFVG
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "navigation.tabs", "navigation.top", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
