@@ -1,0 +1,1893 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="jhonfvg">
+      
+      
+        <link rel="canonical" href="https://jfinfocesde.github.io/25lp/content/p3_1/">
+      
+      
+        <link rel="prev" href="../p3/">
+      
+      
+        <link rel="next" href="../p4/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>Ejercicios de Práctica - Operadores y Estructuras Condicionales en Java - Lógica de Programación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/password-protect.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejercicios-de-practica-operadores-y-estructuras-condicionales-en-java" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Lógica de Programación" class="md-header__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lógica de Programación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ejercicios de Práctica - Operadores y Estructuras Condicionales en Java
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Contenido
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pi/p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Proyecto Integrador
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  Acerca de
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lógica de Programación" class="md-nav__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    Lógica de Programación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Contenido
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Contenido
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1 - Pacto pedagógico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2 - ¿Qué es la programación?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3 - Operadores y instrucciones de control condicional
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ejercicios de Práctica - Operadores y Estructuras Condicionales en Java
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Ejercicios de Práctica - Operadores y Estructuras Condicionales en Java
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-basicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicios Básicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios Básicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-comparacion-de-numeros" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Comparación de Números
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-numero-par-o-impar" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Número Par o Impar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-temperatura-y-estado-del-agua" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Temperatura y Estado del Agua
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-descuento-en-compra" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Descuento en Compra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-verificador-de-numero" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verificador de Número
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-conversor-de-temperatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Conversor de Temperatura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-calculadora-de-imc" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Calculadora de IMC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-calculadora-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Calculadora de Tiempo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-intermedios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicios Intermedios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios Intermedios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-calificacion-de-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Calificación de Notas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-calculadora-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Calculadora Simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-dia-de-la-semana" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Día de la Semana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-categoria-de-edad" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Categoría de Edad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-calculadora-de-prestamo" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Calculadora de Préstamo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-verificador-de-ano-bisiesto" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Verificador de Año Bisiesto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-calculadora-de-descuento-por-lealtad" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Calculadora de Descuento por Lealtad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-operador-ternario" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Operador Ternario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-operaciones-combinadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Operaciones Combinadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-verificador-de-multiplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Verificador de Múltiplos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-calculadora-de-notas-ponderadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Calculadora de Notas Ponderadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-validador-de-triangulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Validador de Triángulo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 4 - Conversión de tipos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5 - Ejercicios Prácticos Solucionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6 - Evaluación Primer Momento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 7 - Estructuras de control en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 8 - Estructuras de Datos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 9 - Ejericicios de lógica de programación en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 10 - Métodos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 12 - Evaluación Segundo Momento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 13
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 14
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 15
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 16
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p17/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 17
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 18
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto Integrador
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto Integrador
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción Proyecto Integrador
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/p2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avance 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acerca de
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-basicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicios Básicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios Básicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-comparacion-de-numeros" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Comparación de Números
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-numero-par-o-impar" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Número Par o Impar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-temperatura-y-estado-del-agua" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Temperatura y Estado del Agua
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-descuento-en-compra" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Descuento en Compra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-verificador-de-numero" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verificador de Número
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-conversor-de-temperatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Conversor de Temperatura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-calculadora-de-imc" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Calculadora de IMC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-calculadora-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Calculadora de Tiempo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-intermedios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicios Intermedios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios Intermedios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-calificacion-de-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Calificación de Notas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-calculadora-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Calculadora Simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-dia-de-la-semana" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Día de la Semana
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-categoria-de-edad" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Categoría de Edad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-calculadora-de-prestamo" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Calculadora de Préstamo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-verificador-de-ano-bisiesto" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Verificador de Año Bisiesto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-calculadora-de-descuento-por-lealtad" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Calculadora de Descuento por Lealtad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-operador-ternario" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Operador Ternario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-operaciones-combinadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Operaciones Combinadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-verificador-de-multiplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Verificador de Múltiplos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-calculadora-de-notas-ponderadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Calculadora de Notas Ponderadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-validador-de-triangulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Validador de Triángulo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ejercicios-de-practica-operadores-y-estructuras-condicionales-en-java">Ejercicios de Práctica - Operadores y Estructuras Condicionales en Java</h1>
+<h2 id="ejercicios-basicos">Ejercicios Básicos</h2>
+<h3 id="1-comparacion-de-numeros">1. <strong>Comparación de Números</strong></h3>
+<ul>
+<li>Escribe un programa que declare dos variables numéricas <code>a</code> y <code>b</code></li>
+<li>Compara los números usando if-else y muestra:<ul>
+<li>Cuál es mayor</li>
+<li>Si son iguales</li>
+<li>Si son diferentes<blockquote>
+<p><strong>Ayuda</strong>: Usa los operadores de comparación (<code>&gt;</code>, <code>&lt;</code>, <code>==</code>, <code>!=</code>) dentro de estructuras if-else. Recuerda que para comparar igualdad se usa <code>==</code> y para diferencia <code>!=</code>.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-numero-par-o-impar">2. <strong>Número Par o Impar</strong></h3>
+<ul>
+<li>Crea un programa que determine si un número es par o impar</li>
+<li>Usa el operador módulo (%) y una estructura if-else</li>
+<li>Muestra el resultado por consola<blockquote>
+<p><strong>Ayuda</strong>: Un número es par si al dividirlo por 2 el residuo es 0. Usa la expresión <code>numero % 2 == 0</code> para verificar si es par.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="3-temperatura-y-estado-del-agua">3. <strong>Temperatura y Estado del Agua</strong></h3>
+<ul>
+<li>Crea un programa que determine el estado del agua según su temperatura</li>
+<li>Usa if-else para determinar si está en estado:<ul>
+<li>Sólido (0°C o menos)</li>
+<li>Líquido (entre 0°C y 100°C)</li>
+<li>Gaseoso (100°C o más)<blockquote>
+<p><strong>Ayuda</strong>: Usa operadores de comparación combinados con <code>&amp;&amp;</code> (AND) para verificar rangos. Por ejemplo: <code>temp &gt; 0 &amp;&amp; temp &lt; 100</code> para el estado líquido.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-descuento-en-compra">4. <strong>Descuento en Compra</strong></h3>
+<ul>
+<li>Crea un programa que calcule el descuento en una compra</li>
+<li>Si el monto es mayor a $100, aplica 10% de descuento</li>
+<li>Si el monto es mayor a $50 pero menor o igual a $100, aplica 5% de descuento</li>
+<li>Si es $50 o menos, no hay descuento</li>
+<li>Muestra el monto original, el descuento y el monto final<blockquote>
+<p><strong>Ayuda</strong>: Usa if-else if para manejar los diferentes casos. Para calcular el descuento, multiplica el monto por el porcentaje en decimal (ejemplo: <code>monto * 0.10</code> para 10%).</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="5-verificador-de-numero">5. <strong>Verificador de Número</strong></h3>
+<ul>
+<li>Crea un programa que determine si un número es:<ul>
+<li>Positivo, negativo o cero</li>
+<li>Par o impar</li>
+</ul>
+</li>
+<li>Muestra ambas características del número<blockquote>
+<p><strong>Ayuda</strong>: Combina dos verificaciones independientes. Para positivo/negativo usa <code>if (num &gt; 0)</code>, y para par/impar usa el operador módulo como en el ejercicio 2.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="6-conversor-de-temperatura">6. <strong>Conversor de Temperatura</strong></h3>
+<ul>
+<li>Crea un programa que convierta temperaturas entre:<ul>
+<li>Celsius a Fahrenheit</li>
+<li>Fahrenheit a Celsius</li>
+</ul>
+</li>
+<li>Usa operadores aritméticos y muestra ambas conversiones<blockquote>
+<p><strong>Ayuda</strong>: Usa estas fórmulas:
+- C a F: <code>(celsius * 9/5) + 32</code>
+- F a C: <code>(fahrenheit - 32) * 5/9</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="7-calculadora-de-imc">7. <strong>Calculadora de IMC</strong></h3>
+<ul>
+<li>Crea un programa que calcule el Índice de Masa Corporal</li>
+<li>Clasifica el resultado según la escala:<ul>
+<li>Bajo peso: &lt; 18.5</li>
+<li>Normal: 18.5 - 24.9</li>
+<li>Sobrepeso: 25 - 29.9</li>
+<li>Obesidad: ≥ 30<blockquote>
+<p><strong>Ayuda</strong>: La fórmula del IMC es <code>peso / (altura * altura)</code> donde el peso está en kg y la altura en metros. Usa if-else if para clasificar el resultado.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="8-calculadora-de-tiempo">8. <strong>Calculadora de Tiempo</strong></h3>
+<ul>
+<li>Convierte una cantidad de minutos en:<ul>
+<li>Horas y minutos</li>
+<li>Días, horas y minutos</li>
+</ul>
+</li>
+<li>Usa operadores de división y módulo<blockquote>
+<p><strong>Ayuda</strong>: 
+- Para obtener las horas: <code>minutos / 60</code>
+- Para obtener los minutos restantes: <code>minutos % 60</code>
+- Para los días: <code>minutos / (24 * 60)</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="ejercicios-intermedios">Ejercicios Intermedios</h2>
+<h3 id="9-calificacion-de-notas">9. <strong>Calificación de Notas</strong></h3>
+<ul>
+<li>Crea un programa que convierta una nota numérica a letra según la siguiente escala:<ul>
+<li>90-100 = A</li>
+<li>80-89 = B</li>
+<li>70-79 = C</li>
+<li>60-69 = D</li>
+<li>0-59 = F</li>
+</ul>
+</li>
+<li>Usa estructuras if-else if para implementar la lógica<blockquote>
+<p><strong>Ayuda</strong>: Comienza con el rango más alto y usa <code>if (nota &gt;= 90)</code> para A, luego continúa con else if para los demás rangos.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="10-calculadora-simple">10. <strong>Calculadora Simple</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">Crea</span><span class="w"> </span><span class="n">una</span><span class="w"> </span><span class="n">calculadora</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">acepte</span><span class="w"> </span><span class="n">dos</span><span class="w"> </span><span class="n">números</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">operador</span><span class="w"> </span><span class="p">(</span><span class="o">+</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="o">/</span><span class="p">)</span>
+<span class="o">-</span><span class="w"> </span><span class="n">Usa</span><span class="w"> </span><span class="n">una</span><span class="w"> </span><span class="n">estructura</span><span class="w"> </span><span class="n">switch</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">realizar</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">operación</span><span class="w"> </span><span class="n">correspondiente</span>
+<span class="o">-</span><span class="w"> </span><span class="n">Muestra</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">resultado</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">operación</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="o">**</span><span class="n">Ayuda</span><span class="o">**</span><span class="p">:</span><span class="w"> </span><span class="n">Usa</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">switch</span><span class="w"> </span><span class="n">con</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">operador</span><span class="w"> </span><span class="n">como</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">control</span><span class="o">.</span><span class="w"> </span><span class="n">Para</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">división</span><span class="p">,</span><span class="w"> </span><span class="n">verifica</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">segundo</span><span class="w"> </span><span class="n">número</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">sea</span><span class="w"> </span><span class="n">cero</span><span class="o">.</span>
+</code></pre></div>
+
+<h3 id="11-dia-de-la-semana">11. <strong>Día de la Semana</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Crea un programa que reciba un número del 1 al 7
+<span class="k">-</span> Usa switch para mostrar el día de la semana correspondiente
+<span class="k">-</span> Si el número está fuera del rango, muestra un mensaje de error
+<span class="k">&gt; </span><span class="ge">**Ayuda**: Usa un switch con casos del 1 al 7, y el default para manejar números fuera de rango.</span>
+</code></pre></div>
+
+<h3 id="12-categoria-de-edad">12. <strong>Categoría de Edad</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Crea un programa que clasifique a una persona según su edad:
+  <span class="k">*</span> 0-2: Bebé
+  <span class="k">*</span> 3-12: Niño
+  <span class="k">*</span> 13-19: Adolescente
+  <span class="k">*</span> 20-64: Adulto
+  <span class="k">*</span> 65+: Adulto mayor
+<span class="k">-</span> Usa if-else if para la clasificación
+<span class="k">&gt; </span><span class="ge">**Ayuda**: Comienza con el rango más bajo usando `if (edad &gt;= 0 &amp;&amp; edad &lt;= 2)` y continúa con else if para los demás rangos.</span>
+</code></pre></div>
+
+<h3 id="13-calculadora-de-prestamo">13. <strong>Calculadora de Préstamo</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Calcula el pago mensual de un préstamo basado en:
+  <span class="k">*</span> Monto del préstamo
+  <span class="k">*</span> Tasa de interés anual
+  <span class="k">*</span> Número de años
+<span class="k">-</span> Usa operadores aritméticos y muestra el pago mensual
+<span class="k">&gt; </span><span class="ge">**Ayuda**: La fórmula es: `P = L[c(1 + c)^n]/[(1 + c)^n - 1]` donde:</span>
+<span class="k">&gt; </span><span class="ge">- P = Pago mensual</span>
+<span class="k">&gt; </span><span class="ge">- L = Monto del préstamo</span>
+<span class="k">&gt; </span><span class="ge">- c = Tasa de interés mensual (tasa anual / 12)</span>
+<span class="k">&gt; </span><span class="ge">- n = Número total de pagos (años * 12)</span>
+</code></pre></div>
+
+<h3 id="14-verificador-de-ano-bisiesto">14. <strong>Verificador de Año Bisiesto</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">Determina</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">año</span><span class="w"> </span><span class="n">es</span><span class="w"> </span><span class="n">bisiesto</span><span class="w"> </span><span class="n">usando</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="nl">reglas:</span>
+<span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="n">Divisible</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="mh">4</span>
+<span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="n">divisible</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="mh">100</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">menos</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">sea</span><span class="w"> </span><span class="n">divisible</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="mh">400</span>
+<span class="o">-</span><span class="w"> </span><span class="n">Usa</span><span class="w"> </span><span class="n">operadores</span><span class="w"> </span><span class="n">lógicos</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">combinar</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="n">condiciones</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="o">**</span><span class="n">Ayuda</span><span class="o">**:</span><span class="w"> </span><span class="n">La</span><span class="w"> </span><span class="n">condición</span><span class="w"> </span><span class="n">completa</span><span class="w"> </span><span class="nl">es:</span><span class="w"> </span><span class="err">`</span><span class="p">(</span><span class="n">año</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mh">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mh">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">año</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mh">100</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mh">0</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">año</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mh">400</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mh">0</span><span class="p">)</span><span class="err">`</span>
+</code></pre></div>
+
+<h3 id="15-calculadora-de-descuento-por-lealtad">15. <strong>Calculadora de Descuento por Lealtad</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">Calcula</span><span class="w"> </span><span class="n">descuentos</span><span class="w"> </span><span class="n">basados</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">años</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">cliente</span><span class="p">:</span>
+<span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="n">años</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="o">%</span>
+<span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="o">-</span><span class="mi">5</span><span class="w"> </span><span class="n">años</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="o">%</span>
+<span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="mi">5</span><span class="o">+</span><span class="w"> </span><span class="n">años</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="o">%</span>
+<span class="o">-</span><span class="w"> </span><span class="n">Aplica</span><span class="w"> </span><span class="n">descuento</span><span class="w"> </span><span class="n">adicional</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">5</span><span class="o">%</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">compra</span><span class="w"> </span><span class="n">supera</span><span class="w"> </span><span class="o">$</span><span class="mi">500</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="o">**</span><span class="n">Ayuda</span><span class="o">**</span><span class="p">:</span><span class="w"> </span><span class="n">Primero</span><span class="w"> </span><span class="n">calcula</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">descuento</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="n">años</span><span class="w"> </span><span class="n">usando</span><span class="w"> </span><span class="k">if</span><span class="o">-</span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">,</span><span class="w"> </span><span class="n">luego</span><span class="w"> </span><span class="n">verifica</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">aplica</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">descuento</span><span class="w"> </span><span class="n">adicional</span><span class="o">.</span><span class="w"> </span><span class="n">Usa</span><span class="w"> </span><span class="n">variables</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">almacenar</span><span class="w"> </span><span class="n">los</span><span class="w"> </span><span class="n">porcentajes</span><span class="o">.</span>
+</code></pre></div>
+
+<h3 id="16-operador-ternario">16. <strong>Operador Ternario</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">-</span><span class="w"> </span><span class="nt">Reescribe</span><span class="w"> </span><span class="nt">las</span><span class="w"> </span><span class="nt">siguientes</span><span class="w"> </span><span class="nt">expresiones</span><span class="w"> </span><span class="nt">if-else</span><span class="w"> </span><span class="nt">usando</span><span class="w"> </span><span class="nt">el</span><span class="w"> </span><span class="nt">operador</span><span class="w"> </span><span class="nt">ternario</span><span class="o">:</span>
+<span class="w">  </span><span class="err">```</span><span class="nt">java</span>
+<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="nt">Expresión</span><span class="w"> </span><span class="nt">1</span>
+<span class="w">  </span><span class="nt">if</span><span class="w"> </span><span class="o">(</span><span class="nt">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nt">18</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="err">estado</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;mayor</span><span class="w"> </span><span class="err">de</span><span class="w"> </span><span class="err">edad&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="err">estado</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;menor</span><span class="w"> </span><span class="err">de</span><span class="w"> </span><span class="err">edad&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="nt">Expresión</span><span class="w"> </span><span class="nt">2</span>
+<span class="w">  </span><span class="nt">if</span><span class="w"> </span><span class="o">(</span><span class="nt">numero</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">0</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="err">resultado</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;positivo&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="o">(</span><span class="nt">numero</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nt">0</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="err">resultado</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;negativo&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="err">resultado</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&quot;cero&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="err">```</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="o">**</span><span class="nt">Ayuda</span><span class="o">**:</span><span class="w"> </span>
+<span class="o">&gt;</span><span class="w"> </span><span class="nt">-</span><span class="w"> </span><span class="nt">Para</span><span class="w"> </span><span class="nt">la</span><span class="w"> </span><span class="nt">expresión</span><span class="w"> </span><span class="nt">1</span><span class="o">:</span><span class="w"> </span><span class="err">`</span><span class="nt">estado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nt">18</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;mayor de edad&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;menor de edad&quot;</span><span class="o">;</span><span class="err">`</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="nt">-</span><span class="w"> </span><span class="nt">Para</span><span class="w"> </span><span class="nt">la</span><span class="w"> </span><span class="nt">expresión</span><span class="w"> </span><span class="nt">2</span><span class="o">:</span><span class="w"> </span><span class="err">`</span><span class="nt">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">numero</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;positivo&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">(</span><span class="nt">numero</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;negativo&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;cero&quot;</span><span class="o">);</span><span class="err">`</span>
+</code></pre></div>
+
+<h3 id="17-operaciones-combinadas">17. <strong>Operaciones Combinadas</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Crea un programa que realice las siguientes operaciones:
+  <span class="k">*</span> Suma y multiplicación de tres números
+  <span class="k">*</span> Promedio de los tres números
+  <span class="k">*</span> Determina si el promedio es mayor que la suma
+  <span class="k">*</span> Usa operadores aritméticos y de comparación
+<span class="k">&gt; </span><span class="ge">**Ayuda**: </span>
+<span class="k">&gt; </span><span class="ge">- Suma: `num1 + num2 + num3`</span>
+<span class="k">&gt; </span><span class="ge">- Multiplicación: `num1 * num2 * num3`</span>
+<span class="k">&gt; </span><span class="ge">- Promedio: `(num1 + num2 + num3) / 3.0`</span>
+<span class="k">&gt; </span><span class="ge">- Compara usando `promedio &gt; suma`</span>
+</code></pre></div>
+
+<h3 id="18-verificador-de-multiplos">18. <strong>Verificador de Múltiplos</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Crea un programa que determine si un número es:
+  <span class="k">*</span> Múltiplo de 2
+  <span class="k">*</span> Múltiplo de 3
+  <span class="k">*</span> Múltiplo de 5
+<span class="k">-</span> Usa el operador módulo y operadores lógicos
+<span class="k">-</span> Muestra todas las condiciones que cumple el número
+<span class="k">&gt; </span><span class="ge">**Ayuda**: Usa el operador módulo para cada verificación:</span>
+<span class="k">&gt; </span><span class="ge">- Múltiplo de 2: `numero % 2 == 0`</span>
+<span class="k">&gt; </span><span class="ge">- Múltiplo de 3: `numero % 3 == 0`</span>
+<span class="k">&gt; </span><span class="ge">- Múltiplo de 5: `numero % 5 == 0`</span>
+</code></pre></div>
+
+<h3 id="19-calculadora-de-notas-ponderadas">19. <strong>Calculadora de Notas Ponderadas</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Calcula la nota final de un curso con:
+  <span class="k">*</span> Exámenes (40%)
+  <span class="k">*</span> Proyectos (30%)
+  <span class="k">*</span> Tareas (20%)
+  <span class="k">*</span> Participación (10%)
+<span class="k">-</span> Usa operadores aritméticos y muestra la nota final
+<span class="k">&gt; </span><span class="ge">**Ayuda**: Multiplica cada nota por su peso en decimal y suma:</span>
+<span class="k">&gt; </span><span class="ge">`notaFinal = (examenes * 0.4) + (proyectos * 0.3) + (tareas * 0.2) + (participacion * 0.1)`</span>
+</code></pre></div>
+
+<h3 id="20-validador-de-triangulo">20. <strong>Validador de Triángulo</strong></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">-</span> Determina si tres longitudes pueden formar un triángulo
+<span class="k">-</span> Clasifica el triángulo como:
+  <span class="k">*</span> Equilátero (tres lados iguales)
+  <span class="k">*</span> Isósceles (dos lados iguales)
+  <span class="k">*</span> Escaleno (ningún lado igual)
+<span class="k">-</span> Usa operadores de comparación y lógicos
+<span class="k">&gt; </span><span class="ge">**Ayuda**: </span>
+<span class="k">&gt; </span><span class="ge">- Para ser triángulo: cada lado debe ser menor que la suma de los otros dos</span>
+<span class="k">&gt; </span><span class="ge">- Equilátero: `lado1 == lado2 &amp;&amp; lado2 == lado3`</span>
+<span class="k">&gt; </span><span class="ge">- Isósceles: `lado1 == lado2 || lado2 == lado3 || lado1 == lado3`</span>
+<span class="k">&gt; </span><span class="ge">- Escaleno: ninguna igualdad entre lados</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025 &copy; by JFVG
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "navigation.tabs", "navigation.top", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../js/password-protect.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
