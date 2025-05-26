@@ -1,0 +1,1414 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="jhonfvg">
+      
+      
+        <link rel="canonical" href="https://jfinfocesde.github.io/25lp/content/p12/">
+      
+      
+        <link rel="prev" href="../p11/">
+      
+      
+        <link rel="next" href="../p13/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>Semana 12 - Evaluación Segundo Momento - Lógica de Programación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/password-protect.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#semana-12-evaluacion-segundo-momento" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Lógica de Programación" class="md-header__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lógica de Programación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Semana 12 - Evaluación Segundo Momento
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Contenido
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pi/p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Proyecto Integrador
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  Acerca de
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lógica de Programación" class="md-nav__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    Lógica de Programación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Contenido
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Contenido
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1 - Pacto pedagógico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2 - ¿Qué es la programación?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3 - Operadores y instrucciones de control condicional
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p3_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ejercicios de Práctica - Operadores y Estructuras Condicionales en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 4 - Conversión de tipos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5 - Ejercicios Prácticos Solucionados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6 - Evaluación Primer Momento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 7 - Estructuras de control en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 8 - Estructuras de Datos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 9 - Ejericicios de lógica de programación en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 10 - Métodos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 11 Fundamentos de Lógica de Programación en Ja
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Semana 12 - Evaluación Segundo Momento
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 13 - Ejercicios de Programación en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 14 - Tutorial: Validación de Contraseñas en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 15 -Ejemplo de Gestión de Usuarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p16/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 16 - Ejemplo Sistema de Asignación de Citas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p17/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 17
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p18/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 18
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto Integrador
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto Integrador
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pautas para la exposición del proyecto integrador (15 minutos)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acerca de
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="semana-12-evaluacion-segundo-momento">Semana 12 - Evaluación Segundo Momento</h1>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Evaluación de Conocimiento</label><label for="__tabbed_1_2">Evaluación de Desempeño 1</label><label for="__tabbed_1_3">Evaluación de Desempeño 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>La evaluación de conocimiento se realizará a través de la plataforma Quizizz que aborda los temas vistos durante las primeras 5 semanas.</p>
+<ul>
+<li><strong>Plataforma</strong>: <a href="https://quizizz.com/join">Enlace Quizizz</a></li>
+<li><strong>Acceso</strong>: Se proporcionará el enlace y código de la prueba al inicio de la evaluación</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><div class="password-protected" data-password-hash="fd4b93823551f3ebf31db6afee933ea691fe16079e00334db73dd8ccadce944d">
+<div class="password-form">
+<p>Este contenido está protegido. Por favor, ingresa la contraseña para acceder:</p>
+<input type="password" class="password-input" placeholder="Contraseña">
+<button class="password-submit md-button md-button--primary">Acceder</button>
+<p class="password-hint" style="display: none;"></p>
+</div>      <br />
+<div class="protected-content"></p>
+<p><strong>Actividad de Evaluación: Gestión Simplificada de Tienda (Usando Métodos, Estructuras de Control y ArrayList)</strong></p>
+<p><strong>Objetivo:</strong> Demostrar la comprensión y aplicación de <strong>métodos</strong>, <strong>estructuras de control</strong> (bucles y condiciones), y <strong>estructuras de datos dinámicas</strong> (<code>ArrayList</code>) para crear un programa funcional en Java.</p>
+<p><strong>Entregable:</strong> Desarrollar un proyecto en Java utilizando Visual Studio Code y grabar un video con cámara, asegurando un buen sonido, en el que se escriba el código desde cero y se explique el ejercicio. </p>
+<p><strong>Enunciado:</strong> Se te pide desarrollar un programa simple en Java para gestionar una lista básica de productos y sus precios en una tienda. Deberás implementar las funcionalidades a través de métodos y utilizar un <code>ArrayList</code> para almacenar los datos.</p>
+<p><strong>Instrucciones:</strong></p>
+<ol>
+<li>
+<p><strong>Configuración Inicial:</strong></p>
+<ul>
+<li>Crea un nuevo proyecto de Java.</li>
+<li>Dentro de tu clase principal (por ejemplo, <code>GestionTienda</code>), declara dos <code>ArrayList</code> estáticos para almacenar la información de los productos:<ul>
+<li><code>ArrayList&lt;String&gt; nombresProductos = new ArrayList&lt;&gt;();</code> para los nombres.</li>
+<li><code>ArrayList&lt;Double&gt; preciosProductos = new ArrayList&lt;&gt;();</code> para los precios.</li>
+</ul>
+</li>
+<li>Importa la clase <code>Scanner</code> para leer la entrada del usuario y <code>ArrayList</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Implementar el Menú Principal:</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, <strong>sin retorno</strong> (<code>void</code>) y <strong>sin parámetros</strong> llamado <code>mostrarMenu()</code>. Este método debe imprimir las opciones disponibles para el usuario, por ejemplo:
+    <div class="highlight"><pre><span></span><code>--- Menú de Gestión de Tienda ---
+1. Agregar nuevo producto
+2. Mostrar todos los productos
+3. Calcular valor total del inventario
+4. Buscar producto por nombre
+5. Salir
+----------------------------------
+Ingrese su opción:
+</code></pre></div></li>
+<li>En el método <code>main</code> (<code>public static void main(String[] args)</code>), implementa un <strong>bucle <code>while</code> infinito</strong> (<code>while(true)</code>) o un <strong>bucle <code>do-while</code></strong> para mantener el programa en ejecución hasta que el usuario decida salir.</li>
+<li>Dentro del bucle, llama a <code>mostrarMenu()</code>.</li>
+<li>Usa un objeto <code>Scanner</code> para leer la opción numérica que ingrese el usuario.</li>
+<li>Utiliza una estructura <strong><code>switch</code></strong> o <strong><code>if-else if</code></strong> para manejar la opción seleccionada por el usuario.</li>
+</ul>
+</li>
+<li>
+<p><strong>Implementar las Funcionalidades (Cada una en su propio Método Estático):</strong></p>
+<ul>
+<li>
+<p><strong>Opción 1: Agregar Producto</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, <strong>sin retorno</strong> (<code>void</code>), que reciba como <strong>parámetros</strong> el <code>Scanner</code> y los dos <code>ArrayList</code> (<code>nombresProductos</code>, <code>preciosProductos</code>).</li>
+<li>Dentro de este método, pide al usuario el nombre y el precio del producto.</li>
+<li>Agrega el nombre a <code>nombresProductos</code> y el precio a <code>preciosProductos</code> usando el método <code>add()</code> de <code>ArrayList</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 2: Mostrar Productos</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, <strong>sin retorno</strong> (<code>void</code>), que reciba como <strong>parámetros</strong> los dos <code>ArrayList</code> (<code>nombresProductos</code>, <code>preciosProductos</code>).</li>
+<li>Primero, verifica si el <code>ArrayList</code> de nombres está <strong>vacío</strong> usando <code>isEmpty()</code>. Si está vacío, imprime un mensaje como "No hay productos registrados."</li>
+<li>Si no está vacío, usa un <strong>bucle <code>for</code> tradicional</strong> que itere desde el índice 0 hasta el tamaño de la lista (<code>size()</code>).</li>
+<li>Dentro del bucle, accede a cada nombre y precio usando el método <code>get(indice)</code> en ambas listas (usando el mismo índice).</li>
+<li>Imprime el nombre del producto y su precio. Considera usar <code>System.out.printf</code> para formatear el precio a dos decimales.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 3: Calcular Valor Total</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, con <strong>retorno</strong> (<code>double</code>), que reciba como <strong>parámetro</strong> el <code>ArrayList</code> de precios (<code>preciosProductos</code>).</li>
+<li>Inicializa una variable <code>total</code> en 0.0.</li>
+<li>Usa un <strong>bucle <code>for-each</code></strong> para recorrer el <code>ArrayList</code> de precios.</li>
+<li>Dentro del bucle, suma cada precio a la variable <code>total</code>.</li>
+<li>El método debe <strong>devolver</strong> la variable <code>total</code> usando la palabra clave <code>return</code>.</li>
+<li>En el método <code>main</code>, llama a este método y luego imprime el resultado del total del inventario (formateado con <code>printf</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 4: Buscar Producto por Nombre</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, con <strong>retorno</strong> (<code>int</code>), que reciba como <strong>parámetros</strong> el <code>Scanner</code> y el <code>ArrayList</code> de nombres (<code>nombresProductos</code>). La idea es que devuelva el índice del producto si lo encuentra, o -1 si no.</li>
+<li>Pide al usuario que ingrese el nombre del producto que desea buscar.</li>
+<li>Usa un <strong>bucle <code>for</code> tradicional</strong> para recorrer el <code>ArrayList</code> de nombres desde el índice 0.</li>
+<li>Dentro del bucle, usa una <strong>condición <code>if</code></strong> para comparar el nombre ingresado por el usuario con el nombre del producto actual en la lista (usa el método <code>.equals()</code> para comparar cadenas de texto, no <code>==</code>).</li>
+<li>Si los nombres coinciden, el método debe <strong>devolver</strong> el índice actual donde se encontró el producto. Puedes usar la palabra clave <strong><code>break</code></strong> dentro del <code>if</code> para salir del bucle una vez que el producto es encontrado (aunque el <code>return</code> ya saldría del método, <code>break</code> sería útil si quisieras seguir procesando después del bucle dentro del mismo método). Un <code>return indice;</code> dentro del if es suficiente para este caso.</li>
+<li>Si el bucle termina de ejecutarse sin encontrar el producto (es decir, nunca se ejecutó el <code>return</code> dentro del <code>if</code>), el método debe devolver <code>-1</code>.</li>
+<li>En el método <code>main</code>, llama a este método <code>buscarProducto</code>. Si el valor retornado es <code>&gt;= 0</code>, significa que se encontró el producto. En ese caso, imprime el nombre y precio del producto encontrado (usando el índice retornado para acceder a ambos <code>ArrayList</code>). Si el valor retornado es <code>-1</code>, imprime un mensaje indicando que el producto no fue encontrado.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 5: Salir</strong></p>
+<ul>
+<li>En el método <code>main</code>, dentro de la estructura <code>switch</code> o <code>if-else if</code> para esta opción, imprime un mensaje de despedida y usa la palabra clave <strong><code>break</code></strong> para salir del bucle principal <code>while</code> o <code>do-while</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cierre:</strong></p>
+<ul>
+<li>Asegúrate de <strong>cerrar el objeto <code>Scanner</code></strong> al finalizar el programa (fuera del bucle principal).</li>
+</ul>
+<p><strong>Conceptos clave a aplicar y que se evalúan:</strong></p>
+<ul>
+<li><strong>Métodos:</strong> Definición, estructura, modificadores (<code>static</code>), tipos de retorno (<code>void</code>, <code>double</code>, <code>int</code>), paso de parámetros.</li>
+<li><strong>Estructuras de Control Repetitivas:</strong> <code>while</code>/<code>do-while</code> para el menú principal, <code>for</code> y <code>for-each</code> para recorrer <code>ArrayList</code>.</li>
+<li><strong>Estructuras de Control Condicionales:</strong> <code>if</code>/<code>else</code> para verificar listas vacías o resultados de búsqueda, <code>switch</code> para el menú.</li>
+<li><strong>Estructuras de Salto:</strong> <code>break</code> para salir del bucle principal. (Opcional pero útil: <code>continue</code> podría usarse si tuvieras alguna condición para saltar una iteración al mostrar productos, aunque no es esencial para esta actividad inicial).</li>
+<li><strong>ArrayList:</strong> Declaración, inicialización, métodos principales (<code>add</code>, <code>get</code>, <code>size</code>, <code>isEmpty</code>, <code>equals</code>).</li>
+<li><strong>Lógica de Programación:</strong> Combinar las estructuras para resolver un problema práctico.</li>
+<li>Manejo de entrada del usuario con <code>Scanner</code>.</li>
+</ul>
+</li>
+</ol>
+<p></div>
+</div></p>
+</div>
+<div class="tabbed-block">
+<p><div class="password-protected" data-password-hash="fd4b93823551f3ebf31db6afee933ea691fe16079e00334db73dd8ccadce944d">
+<div class="password-form">
+<p>Este contenido está protegido. Por favor, ingresa la contraseña para acceder:</p>
+<input type="password" class="password-input" placeholder="Contraseña">
+<button class="password-submit md-button md-button--primary">Acceder</button>
+<p class="password-hint" style="display: none;"></p>
+</div>      <br />
+<div class="protected-content"></p>
+<p><strong>Actividad de Evaluación: Análisis Básico de Notas Escolares (Usando Métodos, Estructuras de Control y ArrayList)</strong></p>
+<p><strong>Objetivo:</strong> Aplicar los conocimientos sobre <strong>métodos</strong>, <strong>estructuras de control</strong> (bucles y condiciones), y <strong>estructuras de datos dinámicas</strong> (<code>ArrayList</code>) para crear un programa en Java que gestione y analice un conjunto de notas escolares.</p>
+<p><strong>Entregable:</strong> Desarrollar un proyecto en Java utilizando Visual Studio Code y grabar un video con cámara, asegurando un buen sonido, en el que se escriba el código desde cero y se explique el ejercicio. </p>
+<p><strong>Enunciado:</strong> Desarrolla un programa simple en Java para registrar notas de estudiantes (en una escala de 0.0 a 5.0, común en algunas evaluaciones) y realizar algunos análisis básicos sobre ellas. Debes utilizar métodos para modularizar las funcionalidades y un <code>ArrayList</code> para almacenar las notas.    </p>
+<p><strong>Instrucciones:</strong></p>
+<ol>
+<li>
+<p><strong>Configuración Inicial:</strong></p>
+<ul>
+<li>Crea un nuevo proyecto de Java.</li>
+<li>Dentro de tu clase principal (por ejemplo, <code>AnalisisNotas</code>), declara un <code>ArrayList</code> estático para almacenar las notas:<ul>
+<li><code>ArrayList&lt;Double&gt; notas = new ArrayList&lt;&gt;();</code>.</li>
+</ul>
+</li>
+<li>Importa la clase <code>Scanner</code> para leer la entrada del usuario y la clase <code>ArrayList</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Implementar el Menú Principal:</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, <strong>sin retorno</strong> (<code>void</code>) y <strong>sin parámetros</strong> llamado <code>mostrarMenu()</code>. Este método debe imprimir las opciones disponibles para el usuario, por ejemplo:
+    <div class="highlight"><pre><span></span><code>--- Análisis de Notas ---
+1. Agregar nota
+2. Mostrar todas las notas
+3. Calcular promedio de notas
+4. Contar notas aprobadas (&gt;= 3.5)
+5. Salir
+--------------------------
+Ingrese su opción:
+</code></pre></div></li>
+<li>En el método <code>main</code> (<code>public static void main(String[] args)</code>), implementa un <strong>bucle <code>do-while</code></strong> o <strong><code>while(true)</code></strong> para mantener el programa en ejecución hasta que el usuario elija salir. Un <code>do-while</code> es adecuado para menús porque garantiza que el menú se muestre al menos una vez.</li>
+<li>Dentro del bucle, llama a <code>mostrarMenu()</code>.</li>
+<li>Usa un objeto <code>Scanner</code> para leer la opción numérica que ingrese el usuario.</li>
+<li>Utiliza una estructura <strong><code>switch</code></strong> o <strong><code>if-else if</code></strong> para manejar la opción seleccionada por el usuario.</li>
+</ul>
+</li>
+<li>
+<p><strong>Implementar las Funcionalidades (Cada una en su propio Método Estático):</strong></p>
+<ul>
+<li>
+<p><strong>Opción 1: Agregar Nota</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, <strong>sin retorno</strong> (<code>void</code>), que reciba como <strong>parámetros</strong> el <code>Scanner</code> y el <code>ArrayList</code> de notas.</li>
+<li>Dentro de este método, pide al usuario que ingrese una nota (tipo <code>double</code>).</li>
+<li>Considera agregar una validación básica para asegurar que la nota esté entre 0.0 y 5.0. Si no es válida, muestra un mensaje y no la agregues.</li>
+<li>Si la nota es válida, agrégala al <code>ArrayList</code> usando el método <code>add()</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 2: Mostrar Notas</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, <strong>sin retorno</strong> (<code>void</code>), que reciba como <strong>parámetro</strong> el <code>ArrayList</code> de notas.</li>
+<li>Primero, verifica si el <code>ArrayList</code> está <strong>vacío</strong> usando <code>isEmpty()</code>. Si está vacío, imprime un mensaje como "No hay notas registradas."</li>
+<li>Si no está vacío, usa un <strong>bucle <code>for</code> tradicional</strong> o un <strong>bucle <code>for-each</code></strong> para iterar sobre el <code>ArrayList</code>. Un <code>for-each</code> es más simple si solo necesitas leer los elementos.</li>
+<li>Dentro del bucle, accede a cada nota usando <code>get(indice)</code> en el bucle <code>for</code> o directamente la variable en el <code>for-each</code>.</li>
+<li>Imprime cada nota. Puedes usar <code>System.out.printf</code> para formatearlas a, por ejemplo, un decimal.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 3: Calcular Promedio</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, con <strong>retorno</strong> (<code>double</code>), que reciba como <strong>parámetro</strong> el <code>ArrayList</code> de notas.</li>
+<li>Inicializa una variable <code>suma</code> en 0.0.</li>
+<li>Verifica si el <code>ArrayList</code> está vacío (<code>isEmpty()</code>). Si está vacío, devuelve 0.0 para evitar división por cero.</li>
+<li>Usa un <strong>bucle <code>for-each</code></strong> para recorrer el <code>ArrayList</code> de notas.</li>
+<li>Dentro del bucle, suma cada nota a la variable <code>suma</code>.</li>
+<li>Después del bucle, calcula el promedio dividiendo <code>suma</code> por el número de elementos en la lista (<code>size()</code>).</li>
+<li>El método debe <strong>devolver</strong> el promedio calculado usando la palabra clave <code>return</code>.</li>
+<li>En el método <code>main</code>, llama a este método y luego imprime el resultado del promedio (formateado con <code>printf</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 4: Contar Notas Aprobadas</strong></p>
+<ul>
+<li>Crea un método <strong>estático</strong>, con <strong>retorno</strong> (<code>int</code>), que reciba como <strong>parámetro</strong> el <code>ArrayList</code> de notas.</li>
+<li>Inicializa un contador <code>aprobados</code> en 0.</li>
+<li>Verifica si el <code>ArrayList</code> está vacío (<code>isEmpty()</code>). Si está vacío, devuelve 0.</li>
+<li>Usa un <strong>bucle <code>for-each</code></strong> para recorrer el <code>ArrayList</code>.</li>
+<li>Dentro del bucle, usa una <strong>condición <code>if</code></strong> para verificar si la nota actual es <code>&gt;= 3.5</code>.</li>
+<li>Si la condición es verdadera, incrementa el contador <code>aprobados</code>.</li>
+<li>Después del bucle, el método debe <strong>devolver</strong> el valor de <code>aprobados</code>.</li>
+<li>En el método <code>main</code>, llama a este método y luego imprime cuántas notas aprobadas hay.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opción 5: Salir</strong></p>
+<ul>
+<li>En el método <code>main</code>, dentro de la estructura <code>switch</code> o <code>if-else if</code> para esta opción, imprime un mensaje de despedida y usa la palabra clave <strong><code>break</code></strong> para salir del bucle principal <code>do-while</code> o <code>while</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cierre:</strong></p>
+<ul>
+<li>Asegúrate de <strong>cerrar el objeto <code>Scanner</code></strong> al finalizar el programa (fuera del bucle principal).</li>
+</ul>
+<p><strong>Conceptos clave a aplicar y que se evalúan:</strong></p>
+<ul>
+<li><strong>Métodos:</strong> Definición, estructura, modificadores (<code>static</code>), tipos de retorno (<code>void</code>, <code>double</code>, <code>int</code>), paso de parámetros.</li>
+<li><strong>Estructuras de Control Repetitivas:</strong> <code>do-while</code>/<code>while</code> para el menú principal, <code>for</code> y <code>for-each</code> para recorrer <code>ArrayList</code>.</li>
+<li><strong>Estructuras de Control Condicionales:</strong> <code>if</code>/<code>else</code>, <code>if-else if</code>, <code>switch</code> para el menú y la lógica de análisis.</li>
+<li><strong>Estructuras de Salto:</strong> <code>break</code> para salir del bucle principal. (Opcional: <code>continue</code> podría usarse, aunque no es estrictamente necesario para este diseño inicial).</li>
+<li><strong>ArrayList:</strong> Declaración, inicialización, métodos principales (<code>add</code>, <code>get</code>, <code>size</code>, <code>isEmpty</code>).</li>
+<li><strong>Lógica de Programación:</strong> Combinar las estructuras para resolver el problema de gestión y análisis de notas.</li>
+<li>Manejo de entrada del usuario con <code>Scanner</code>.</li>
+<li>Validación básica de entrada.  </li>
+</ul>
+</li>
+</ol>
+<p></div>
+</div></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025 &copy; by JFVG
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "navigation.tabs", "navigation.top", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../js/password-protect.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
