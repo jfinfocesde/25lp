@@ -84,11 +84,11 @@ nav:
       - content/p18.md 
 
 
-  - Proyecto Integrador: 
-      - pi/p1.md     
-  - Blog:
-     - blog/index.md
-  - Acerca de: about.md
+  # - Proyecto Integrador: 
+  #     - pi/p1.md     
+  # - Blog:
+  #    - blog/index.md
+  # - Acerca de: about.md
 
 plugins:
   - search
