@@ -1,0 +1,2893 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="jhonfvg">
+      
+      
+        <link rel="canonical" href="https://jfinfocesde.github.io/25lp/content/p5/">
+      
+      
+        <link rel="prev" href="../p4/">
+      
+      
+        <link rel="next" href="../p6/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>Semana 5 - Ejercicios Prácticos Solucionados - Lógica de Programación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/password-protect.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#semana-5-ejercicios-practicos-solucionados" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Lógica de Programación" class="md-header__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lógica de Programación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Semana 5 - Ejercicios Prácticos Solucionados
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Contenido
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../activities/p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Actividades
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pi/p1/" class="md-tabs__link">
+          
+  
+    
+  
+  Proyecto Integrador
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Lógica de Programación" class="md-nav__button md-logo" aria-label="Lógica de Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+
+    </a>
+    Lógica de Programación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Contenido
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Contenido
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1 - Pacto pedagógico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2 - ¿Qué es la programación?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3 - Operadores y instrucciones de control condicional
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 4 - Conversión de tipos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Semana 5 - Ejercicios Prácticos Solucionados
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5 - Ejercicios Prácticos Solucionados
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-1-calculadora-de-promedio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 1: Calculadora de Promedio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 1: Calculadora de Promedio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-2-conversor-de-temperatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 2: Conversor de Temperatura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 2: Conversor de Temperatura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-3-calculadora-de-descuento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 3: Calculadora de Descuento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 3: Calculadora de Descuento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-4-calculadora-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 4: Calculadora Básica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 4: Calculadora Básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-5-calculadora-de-imc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 5: Calculadora de IMC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 5: Calculadora de IMC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-6-conversor-de-moneda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 6: Conversor de Moneda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 6: Conversor de Moneda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-7-calculadora-de-interes-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 7: Calculadora de Interés Simple
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 7: Calculadora de Interés Simple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-8-conversor-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 8: Conversor de Tiempo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 8: Conversor de Tiempo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-9-calculadora-de-impuestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 9: Calculadora de Impuestos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 9: Calculadora de Impuestos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-10-sistema-de-calificacion-ponderada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 10: Sistema de Calificación Ponderada
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 10: Sistema de Calificación Ponderada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-11-validador-de-contrasena-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 11: Validador de Contraseña Simple
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 11: Validador de Contraseña Simple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-12-calculadora-de-descuentos-por-membresia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 12: Calculadora de Descuentos por Membresía
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 12: Calculadora de Descuentos por Membresía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-13-analizador-de-texto-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 13: Analizador de Texto Simple
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 13: Analizador de Texto Simple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-14-calculadora-de-propinas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 14: Calculadora de Propinas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 14: Calculadora de Propinas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-15-calculadora-de-calificaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 15: Calculadora de Calificaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 15: Calculadora de Calificaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-de-aprendizaje-en-parejas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad de Aprendizaje en Parejas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad de Aprendizaje en Parejas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instrucciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instrucciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6 - Evaluación Primer Momento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 7 - Estructuras de control en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 8 - Ejercicios de Lógica de Programación en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 9 - Estructuras de Datos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 10 - Métodos en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 11: ArrayList (Java)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 12 - Evaluación Segundo Momento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Actividades
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Actividades
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activities/p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Actividad 1 - Ejercicios de Lógica de Programación en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activities/p2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Actividad 2 - Operadores y Instrucciones de Control Condicional en Java
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto Integrador
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto Integrador
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/p1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proyecto Integrador
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-1-calculadora-de-promedio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 1: Calculadora de Promedio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 1: Calculadora de Promedio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-2-conversor-de-temperatura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 2: Conversor de Temperatura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 2: Conversor de Temperatura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-3-calculadora-de-descuento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 3: Calculadora de Descuento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 3: Calculadora de Descuento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-4-calculadora-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 4: Calculadora Básica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 4: Calculadora Básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-5-calculadora-de-imc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 5: Calculadora de IMC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 5: Calculadora de IMC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-6-conversor-de-moneda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 6: Conversor de Moneda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 6: Conversor de Moneda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-7-calculadora-de-interes-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 7: Calculadora de Interés Simple
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 7: Calculadora de Interés Simple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-8-conversor-de-tiempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 8: Conversor de Tiempo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 8: Conversor de Tiempo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-9-calculadora-de-impuestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 9: Calculadora de Impuestos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 9: Calculadora de Impuestos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-10-sistema-de-calificacion-ponderada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 10: Sistema de Calificación Ponderada
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 10: Sistema de Calificación Ponderada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-11-validador-de-contrasena-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 11: Validador de Contraseña Simple
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 11: Validador de Contraseña Simple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-12-calculadora-de-descuentos-por-membresia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 12: Calculadora de Descuentos por Membresía
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 12: Calculadora de Descuentos por Membresía">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-13-analizador-de-texto-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 13: Analizador de Texto Simple
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 13: Analizador de Texto Simple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-14-calculadora-de-propinas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 14: Calculadora de Propinas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 14: Calculadora de Propinas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solución
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-15-calculadora-de-calificaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio 15: Calculadora de Calificaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 15: Calculadora de Calificaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-de-aprendizaje-en-parejas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividad de Aprendizaje en Parejas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad de Aprendizaje en Parejas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instrucciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instrucciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="semana-5-ejercicios-practicos-solucionados">Semana 5 - Ejercicios Prácticos Solucionados</h1>
+<h2 id="ejercicio-1-calculadora-de-promedio">Ejercicio 1: Calculadora de Promedio</h2>
+<h3 id="descripcion">Descripción</h3>
+<p>Crear un programa que calcule el promedio de tres notas y determine si el estudiante aprobó o no. Un estudiante aprueba si su promedio es mayor o igual a 3.0.</p>
+<h3 id="solucion">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraPromedio</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Declaración de variables</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">nota1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.5</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">nota2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.8</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">nota3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4.0</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Cálculo del promedio</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">promedio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">nota1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota3</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar el promedio con dos decimales</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;El promedio es: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">promedio</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Determinar si aprobó</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">promedio</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">3.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;¡Felicitaciones! Has aprobado.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Lo siento, no has aprobado.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion">Explicación</h3>
+<ul>
+<li>Utilizamos variables de tipo <code>double</code> para almacenar las notas y el promedio.</li>
+<li>Aplicamos operadores aritméticos para calcular el promedio: suma (+) y división (/).</li>
+<li>Usamos una estructura condicional (if-else) para determinar si el estudiante aprobó.</li>
+<li>El método <code>printf</code> se usa para formatear el promedio a dos decimales.</li>
+</ul>
+<h2 id="ejercicio-2-conversor-de-temperatura">Ejercicio 2: Conversor de Temperatura</h2>
+<h3 id="descripcion_1">Descripción</h3>
+<p>Crear un programa que convierta una temperatura de Celsius a Fahrenheit y viceversa, utilizando la conversión de tipos y operadores aritméticos.</p>
+<h3 id="solucion_1">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ConversorTemperatura</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Convertir de Celsius a Fahrenheit</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">celsiusStr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;25&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">celsius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">celsiusStr</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">fahrenheit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">celsius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">32</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">celsius</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;°C equivale a &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fahrenheit</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;°F&quot;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Convertir de Fahrenheit a Celsius</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">tempF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">98.6</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">tempC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">tempF</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">32</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">tempCInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">tempC</span><span class="p">;</span><span class="w"> </span><span class="c1">// Conversión explícita a entero</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">tempF</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;°F equivale a &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tempC</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;°C&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Temperatura en Celsius (redondeada): &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tempCInt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;°C&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_1">Explicación</h3>
+<ul>
+<li>Utilizamos <code>Double.parseDouble()</code> para convertir un String a double.</li>
+<li>Aplicamos fórmulas de conversión usando operadores aritméticos.</li>
+<li>Realizamos una conversión explícita (casting) de double a int.</li>
+<li>Demostramos el uso de diferentes tipos de datos y sus conversiones.</li>
+</ul>
+<h2 id="ejercicio-3-calculadora-de-descuento">Ejercicio 3: Calculadora de Descuento</h2>
+<h3 id="descripcion_2">Descripción</h3>
+<p>Crear un programa que calcule el precio final de un producto después de aplicar un descuento, utilizando operadores aritméticos y de asignación.</p>
+<h3 id="solucion_2">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraDescuento</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Precio original y porcentaje de descuento</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">precioOriginal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100000</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">porcentajeDescuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Cálculo del descuento</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">descuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">precioOriginal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">porcentajeDescuento</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">100.0</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">precioFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">precioOriginal</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">descuento</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Precio original: $&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">precioOriginal</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Descuento &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">porcentajeDescuento</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;%: $&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">descuento</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Precio final: $&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">precioFinal</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Ejemplo con operador de asignación compuesto</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">precio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">precioFinal</span><span class="p">;</span>
+<span class="w">        </span><span class="n">precio</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mf">1.19</span><span class="p">;</span><span class="w"> </span><span class="c1">// Agregar IVA del 19%</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Precio final con IVA: $&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">precio</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_2">Explicación</h3>
+<ul>
+<li>Utilizamos variables de tipo <code>double</code> para manejar decimales en los precios.</li>
+<li>Aplicamos operadores aritméticos para calcular el descuento y el precio final.</li>
+<li>Demostramos el uso del operador de asignación compuesto (*=).</li>
+<li>Calculamos porcentajes y realizamos operaciones con decimales.</li>
+</ul>
+<h2 id="ejercicio-4-calculadora-basica">Ejercicio 4: Calculadora Básica</h2>
+<h3 id="descripcion_3">Descripción</h3>
+<p>Crear una calculadora que realice las cuatro operaciones básicas (suma, resta, multiplicación y división) con dos números.</p>
+<h3 id="solucion_3">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraBasica</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Declaración de variables</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">15.5</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5.0</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Realizar operaciones</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">suma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">resta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">multiplicacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">division</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Suma: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">suma</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Resta: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">resta</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Multiplicación: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">multiplicacion</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Verificar división por cero</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num2</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;División: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">division</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;No se puede dividir por cero&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_3">Explicación</h3>
+<ul>
+<li>Implementamos las cuatro operaciones aritméticas básicas.</li>
+<li>Utilizamos el operador de división (/) con verificación de división por cero.</li>
+<li>Aplicamos formato de salida con printf para mostrar dos decimales.</li>
+</ul>
+<h2 id="ejercicio-5-calculadora-de-imc">Ejercicio 5: Calculadora de IMC</h2>
+<h3 id="descripcion_4">Descripción</h3>
+<p>Crear un programa que calcule el Índice de Masa Corporal (IMC) y clasifique el estado de salud según el resultado.</p>
+<h3 id="solucion_4">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraIMC</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Datos de entrada</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">peso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">70.5</span><span class="p">;</span><span class="w">    </span><span class="c1">// en kilogramos</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">altura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.75</span><span class="p">;</span><span class="w">   </span><span class="c1">// en metros</span>
+
+<span class="w">        </span><span class="c1">// Cálculo del IMC</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">imc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">peso</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">altura</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">altura</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Mostrar IMC</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Su IMC es: %.1f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">imc</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Clasificar estado de salud</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">18.5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Bajo peso&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">25</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Peso normal&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">30</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Sobrepeso&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Obesidad&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_4">Explicación</h3>
+<ul>
+<li>Calculamos el IMC usando la fórmula peso/(altura²).</li>
+<li>Utilizamos estructura if-else if para clasificar el estado de salud.</li>
+<li>Aplicamos formato de salida para mostrar un decimal.</li>
+</ul>
+<h2 id="ejercicio-6-conversor-de-moneda">Ejercicio 6: Conversor de Moneda</h2>
+<h3 id="descripcion_5">Descripción</h3>
+<p>Crear un programa que convierta entre diferentes monedas (USD, EUR, COP) utilizando tasas de cambio fijas.</p>
+<h3 id="solucion_5">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ConversorMoneda</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Tasas de cambio fijas</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">usdToEur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.85</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">usdToCop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4000.0</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Cantidad a convertir</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">cantidadUsd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100.0</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Realizar conversiones</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">cantidadEur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cantidadUsd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">usdToEur</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">cantidadCop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cantidadUsd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">usdToCop</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;%.2f USD equivale a:%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cantidadUsd</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;EUR: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cantidadEur</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;COP: %.0f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cantidadCop</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_5">Explicación</h3>
+<ul>
+<li>Definimos tasas de cambio como constantes.</li>
+<li>Realizamos conversiones usando operadores de multiplicación.</li>
+<li>Utilizamos diferentes formatos de salida según la moneda.</li>
+</ul>
+<h2 id="ejercicio-7-calculadora-de-interes-simple">Ejercicio 7: Calculadora de Interés Simple</h2>
+<h3 id="descripcion_6">Descripción</h3>
+<p>Crear un programa que calcule el interés simple de un préstamo basado en el capital, la tasa de interés y el tiempo.</p>
+<h3 id="solucion_6">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraInteres</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Datos del préstamo</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">capital</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000000</span><span class="p">;</span><span class="w">    </span><span class="c1">// Capital inicial</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">tasaAnual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.12</span><span class="p">;</span><span class="w">     </span><span class="c1">// 12% anual</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">tiempo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">              </span><span class="c1">// años</span>
+
+<span class="w">        </span><span class="c1">// Cálculo del interés simple</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">interes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">capital</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tasaAnual</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tiempo</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">montoTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">capital</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">interes</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Capital inicial: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">capital</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Interés generado: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">interes</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Monto total: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">montoTotal</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_6">Explicación</h3>
+<ul>
+<li>Aplicamos la fórmula de interés simple: I = C * r * t</li>
+<li>Utilizamos variables de tipo double para manejar decimales.</li>
+<li>Mostramos los resultados con formato monetario.</li>
+</ul>
+<h2 id="ejercicio-8-conversor-de-tiempo">Ejercicio 8: Conversor de Tiempo</h2>
+<h3 id="descripcion_7">Descripción</h3>
+<p>Crear un programa que convierta una cantidad de segundos a horas, minutos y segundos.</p>
+<h3 id="solucion_7">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ConversorTiempo</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Cantidad de segundos a convertir</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">segundosTotales</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3665</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Cálculo de conversión</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">horas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundosTotales</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3600</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">minutos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">segundosTotales</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3600</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">segundos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segundosTotales</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultado</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;%d segundos equivalen a:%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">segundosTotales</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;%d horas, %d minutos y %d segundos%n&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                         </span><span class="n">horas</span><span class="p">,</span><span class="w"> </span><span class="n">minutos</span><span class="p">,</span><span class="w"> </span><span class="n">segundos</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_7">Explicación</h3>
+<ul>
+<li>Utilizamos el operador de división (/) para obtener las horas y minutos.</li>
+<li>Aplicamos el operador módulo (%) para obtener los restos.</li>
+<li>Usamos variables de tipo int ya que trabajamos con números enteros.</li>
+</ul>
+<h2 id="ejercicio-9-calculadora-de-impuestos">Ejercicio 9: Calculadora de Impuestos</h2>
+<h3 id="descripcion_8">Descripción</h3>
+<p>Crear un programa que calcule el impuesto a pagar según el monto de la compra, con diferentes tasas según el valor.</p>
+<h3 id="solucion_8">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraImpuestos</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Monto de la compra</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">montoCompra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">250000</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">tasaImpuesto</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Determinar tasa de impuesto</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">montoCompra</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">100000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">tasaImpuesto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.10</span><span class="p">;</span><span class="w">  </span><span class="c1">// 10%</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">montoCompra</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">500000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">tasaImpuesto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.15</span><span class="p">;</span><span class="w">  </span><span class="c1">// 15%</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">tasaImpuesto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.19</span><span class="p">;</span><span class="w">  </span><span class="c1">// 19%</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Calcular impuesto y total</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">impuesto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">montoCompra</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tasaImpuesto</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">montoCompra</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">impuesto</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Monto de compra: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">montoCompra</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Tasa de impuesto: %.1f%%%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tasaImpuesto</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Impuesto: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">impuesto</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Total a pagar: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_8">Explicación</h3>
+<ul>
+<li>Implementamos diferentes tasas de impuesto según el monto.</li>
+<li>Utilizamos estructura if-else if para determinar la tasa aplicable.</li>
+<li>Calculamos el impuesto y el total a pagar.</li>
+</ul>
+<h2 id="ejercicio-10-sistema-de-calificacion-ponderada">Ejercicio 10: Sistema de Calificación Ponderada</h2>
+<h3 id="descripcion_9">Descripción</h3>
+<p>Crear un programa que calcule la nota final de un estudiante basado en diferentes evaluaciones con distintos pesos.</p>
+<h3 id="solucion_9">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalificacionPonderada</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Notas y pesos</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">examen1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4.2</span><span class="p">;</span><span class="w">     </span><span class="c1">// 30%</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">examen2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.8</span><span class="p">;</span><span class="w">     </span><span class="c1">// 30%</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">proyecto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4.5</span><span class="p">;</span><span class="w">     </span><span class="c1">// 25%</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">tareas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.9</span><span class="p">;</span><span class="w">      </span><span class="c1">// 15%</span>
+
+<span class="w">        </span><span class="c1">// Cálculo de nota final</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">notaFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">examen1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.30</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span>
+<span class="w">                          </span><span class="p">(</span><span class="n">examen2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.30</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span>
+<span class="w">                          </span><span class="p">(</span><span class="n">proyecto</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.25</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span>
+<span class="w">                          </span><span class="p">(</span><span class="n">tareas</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.15</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Nota Final: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">notaFinal</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Determinar estado</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">4.5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Excelente&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">4.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Muy Bueno&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">3.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Aprobado&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Reprobado&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_9">Explicación</h3>
+<ul>
+<li>Aplicamos pesos diferentes a cada evaluación.</li>
+<li>Calculamos la nota final usando operadores aritméticos.</li>
+<li>Implementamos una clasificación del rendimiento.</li>
+</ul>
+<h2 id="ejercicio-11-validador-de-contrasena-simple">Ejercicio 11: Validador de Contraseña Simple</h2>
+<h3 id="descripcion_10">Descripción</h3>
+<p>Crear un programa que valide si una contraseña cumple con un criterio específico sin usar bucles.</p>
+<h3 id="codigo">Código</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ValidadorContrasena</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Contraseña a validar</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Abc12345&quot;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Validar criterios usando métodos de String</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">tieneMinuscula</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">password</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">password</span><span class="p">.</span><span class="na">toUpperCase</span><span class="p">());</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">tieneMayuscula</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">password</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">password</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">());</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">tieneNumero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">password</span><span class="p">.</span><span class="na">matches</span><span class="p">(</span><span class="s">&quot;.*\\d.*&quot;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Validar todos los criterios</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">esValida</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">password</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                          </span><span class="n">tieneMinuscula</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                          </span><span class="n">tieneMayuscula</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                          </span><span class="n">tieneNumero</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;La contraseña es válida: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">esValida</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="ejercicio-12-calculadora-de-descuentos-por-membresia">Ejercicio 12: Calculadora de Descuentos por Membresía</h2>
+<h3 id="descripcion_11">Descripción</h3>
+<p>Crear un programa que calcule descuentos en una tienda basados en el nivel de membresía del cliente y el monto de la compra.</p>
+<h3 id="codigo_1">Código</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraDescuentosMembresía</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Datos de entrada</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">nivelMembresia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;GOLD&quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">// BASIC, SILVER, GOLD, PLATINUM</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">montoCompra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">250.0</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">esFestivo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Calcular descuento base por membresía</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">descuentoBase</span><span class="p">;</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">nivelMembresia</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;PLATINUM&quot;</span><span class="p">:</span><span class="w"> </span><span class="n">descuentoBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.20</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;GOLD&quot;</span><span class="p">:</span><span class="w"> </span><span class="n">descuentoBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.15</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;SILVER&quot;</span><span class="p">:</span><span class="w"> </span><span class="n">descuentoBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.10</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">default</span><span class="p">:</span><span class="w"> </span><span class="n">descuentoBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.05</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Ajustar descuento por monto de compra</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">descuentoAdicional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">montoCompra</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">500.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">descuentoAdicional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.05</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">montoCompra</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">200.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">descuentoAdicional</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.02</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Descuento especial en festivos</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">descuentoFestivo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">esFestivo</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mf">0.05</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Calcular descuento total y precio final</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">descuentoTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">descuentoBase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">descuentoAdicional</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">descuentoFestivo</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">montoDescuento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">montoCompra</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">descuentoTotal</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">precioFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">montoCompra</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">montoDescuento</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Nivel de Membresía: %s%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">nivelMembresia</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Monto de Compra: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">montoCompra</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Descuento Total: %.1f%%%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">descuentoTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Monto Descuento: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">montoDescuento</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Precio Final: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">precioFinal</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_10">Explicación</h3>
+<ul>
+<li>Implementamos un sistema de descuentos multinivel usando switch y condicionales.</li>
+<li>Calculamos descuentos basados en membresía, monto de compra y días festivos.</li>
+<li>Utilizamos el operador ternario para el descuento en festivos.</li>
+<li>Aplicamos formato de salida para mostrar valores monetarios y porcentajes.</li>
+</ul>
+<h2 id="ejercicio-13-analizador-de-texto-simple">Ejercicio 13: Analizador de Texto Simple</h2>
+<h3 id="descripcion_12">Descripción</h3>
+<p>Crear un programa que analice características básicas de un texto sin usar bucles.</p>
+<h3 id="codigo_2">Código</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">AnalizadorTextoSimple</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">texto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hola Mundo&quot;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Análisis simple usando métodos de String</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">longitud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">texto</span><span class="p">.</span><span class="na">length</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">espacios</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">texto</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">texto</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">).</span><span class="na">length</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">vocales</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">texto</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">().</span><span class="na">replaceAll</span><span class="p">(</span><span class="s">&quot;[^aeiou]&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">).</span><span class="na">length</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">consonantes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">texto</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">().</span><span class="na">replaceAll</span><span class="p">(</span><span class="s">&quot;[^a-z]&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">).</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vocales</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Análisis de texto: &#39;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">texto</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;&#39;&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Longitud: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">longitud</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Espacios: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">espacios</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Vocales: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">vocales</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Consonantes: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">consonantes</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_11">Explicación</h3>
+<ul>
+<li>Procesamos texto carácter por carácter.</li>
+<li>Utilizamos métodos de Character para clasificación.</li>
+<li>Mantenemos contadores para diferentes tipos de caracteres.</li>
+</ul>
+<h2 id="ejercicio-14-calculadora-de-propinas">Ejercicio 14: Calculadora de Propinas</h2>
+<h3 id="descripcion_13">Descripción</h3>
+<p>Crear un programa que calcule propinas basadas en el monto de la cuenta y el nivel de satisfacción.</p>
+<h3 id="solucion_10">Solución</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraPropinas</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">montoCuenta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">84.50</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">nivelSatisfaccion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// 1-5</span>
+
+<span class="w">        </span><span class="c1">// Determinar porcentaje de propina</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">porcentajePropina</span><span class="p">;</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">nivelSatisfaccion</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span><span class="w"> </span><span class="n">porcentajePropina</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.20</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span><span class="w"> </span><span class="n">porcentajePropina</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.15</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span><span class="w"> </span><span class="n">porcentajePropina</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.10</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">default</span><span class="p">:</span><span class="w"> </span><span class="n">porcentajePropina</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.05</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Calcular propina y total</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">propina</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">montoCuenta</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">porcentajePropina</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">montoCuenta</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">propina</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Cuenta: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">montoCuenta</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Nivel de satisfacción: %d/5%n&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                        </span><span class="n">nivelSatisfaccion</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Propina (%.0f%%): $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                        </span><span class="n">porcentajePropina</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">propina</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Total: $%.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_12">Explicación</h3>
+<ul>
+<li>Utilizamos switch para diferentes niveles de satisfacción.</li>
+<li>Calculamos porcentajes y valores monetarios.</li>
+<li>Aplicamos formato de salida para mejor presentación.</li>
+</ul>
+<h2 id="ejercicio-15-calculadora-de-calificaciones">Ejercicio 15: Calculadora de Calificaciones</h2>
+<h3 id="descripcion_14">Descripción</h3>
+<p>Crear un programa que calcule la calificación final de un estudiante basado en diferentes evaluaciones con pesos distintos y convierta la nota numérica a letra según una escala predefinida.</p>
+<h3 id="codigo_3">Código</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CalculadoraCalificaciones</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Notas y pesos de las evaluaciones</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">examenParcial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.8</span><span class="p">;</span><span class="w">    </span><span class="c1">// 30%</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">proyectoFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4.2</span><span class="p">;</span><span class="w">     </span><span class="c1">// 40%</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">participacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4.5</span><span class="p">;</span><span class="w">      </span><span class="c1">// 15%</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">tareas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.9</span><span class="p">;</span><span class="w">            </span><span class="c1">// 15%</span>
+
+<span class="w">        </span><span class="c1">// Calcular nota final ponderada</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">notaFinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">examenParcial</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.30</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                          </span><span class="p">(</span><span class="n">proyectoFinal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.40</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                          </span><span class="p">(</span><span class="n">participacion</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.15</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                          </span><span class="p">(</span><span class="n">tareas</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.15</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Determinar letra según la escala</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">letraCalificacion</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">4.5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">letraCalificacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;A+&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">4.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">letraCalificacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;A&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">3.5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">letraCalificacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;B&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">3.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">letraCalificacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">2.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">letraCalificacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;D&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">letraCalificacion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;F&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Determinar estado (Aprobado/Reprobado)</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">estado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">notaFinal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">3.0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;Aprobado&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Reprobado&quot;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Mostrar resultados</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;=== Reporte de Calificaciones ===&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Examen Parcial (30%%): %.1f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">examenParcial</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Proyecto Final (40%%): %.1f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">proyectoFinal</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Participación (15%%): %.1f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">participacion</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Tareas (15%%): %.1f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tareas</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;Nota Final: %.2f%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">notaFinal</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Calificación en Letra: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">letraCalificacion</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Estado: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">estado</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="explicacion_13">Explicación</h3>
+<ul>
+<li>Calculamos una nota final ponderada usando diferentes pesos para cada evaluación.</li>
+<li>Implementamos una escala de calificación por letras usando condicionales.</li>
+<li>Utilizamos el operador ternario para determinar el estado de aprobación.</li>
+<li>Aplicamos formato de salida para mostrar las notas con decimales apropiados.</li>
+</ul>
+<p>Estos ejercicios integran los conceptos de:
+- Tipos de datos y variables
+- Operadores aritméticos y de asignación
+- Conversión de tipos (parsing y casting)
+- Estructuras de control condicional
+- Formato de salida
+- Manipulación de cadenas
+- Operadores lógicos
+- Bucles y control de flujo
+- Patrones y algoritmos simples</p>
+<h2 id="actividad-de-aprendizaje-en-parejas">Actividad de Aprendizaje en Parejas</h2>
+<h3 id="descripcion_15">Descripción</h3>
+<p>Para reforzar la comprensión de los conceptos aprendidos, realizaremos una actividad de aprendizaje colaborativo en parejas.</p>
+<h3 id="instrucciones">Instrucciones</h3>
+<ol>
+<li>El docente asignará un ejercicio específico a cada pareja de estudiantes.</li>
+<li>Cada pareja deberá:</li>
+<li>Analizar detalladamente el código del ejercicio asignado</li>
+<li>Identificar los conceptos clave utilizados</li>
+<li>Preparar una explicación clara del funcionamiento del código</li>
+<li>Estar listos para responder preguntas de sus compañeros</li>
+<li>Durante la presentación, la pareja deberá:</li>
+<li>Explicar el propósito del ejercicio</li>
+<li>Detallar la lógica del código paso a paso</li>
+<li>Destacar los conceptos de programación aplicados</li>
+<li>Demostrar la ejecución del programa</li>
+</ol>
+<h3 id="objetivos">Objetivos</h3>
+<ul>
+<li>Fortalecer la comprensión de los conceptos de programación</li>
+<li>Desarrollar habilidades de comunicación técnica</li>
+<li>Fomentar el aprendizaje colaborativo</li>
+<li>Practicar la explicación de código a otros programadores</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025 &copy; by JFVG
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "navigation.tabs", "navigation.top", "content.code.annotate", "content.code.copy", "content.tabs.link", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../js/password-protect.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
