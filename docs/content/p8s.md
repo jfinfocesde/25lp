@@ -1,4 +1,4 @@
-# Semana 12 - Ejercicios de Lógica de Programación en Java
+# Ejercicios de Lógica de Programación en Java
 
 ## Ejercicio 1: Calculadora de Descuentos en Tienda
 
